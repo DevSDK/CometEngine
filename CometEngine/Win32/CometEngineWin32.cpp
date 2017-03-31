@@ -2,7 +2,7 @@
 #include <string>
 #include <DirectXColors.h>
 #define HR(x) { HRESULT nValue = (x); if(FAILED(nValue)) return false; } 
-
+using namespace CometEngine;
 CometEngineWin32* CometEngineWin32::Instance = NULL;
 
 CometEngineWin32::CometEngineWin32()
@@ -18,6 +18,7 @@ CometEngineWin32::~CometEngineWin32()
 	mDXContext->Release();
 	mRenderTargetView->Release();
 	mDepthStencilBuffer->Release();
+	
 	delete Instance;
 }
 

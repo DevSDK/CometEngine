@@ -3,6 +3,7 @@
 #include <string>
 #include "CometEngineWin32.h"
 
+using namespace CometEngine;
 
 extern "C" __declspec(dllexport)  bool __stdcall CometEngineWIn32Init(wchar_t* Title, int Width, int Height, int WindowMode, HINSTANCE hInstance, LPSTR lpCmdLine)
 {

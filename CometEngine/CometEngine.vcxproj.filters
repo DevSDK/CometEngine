@@ -4,7 +4,10 @@
     <ClCompile Include="Win32\CometEngineWin32.cpp">
       <Filter>ClientWin32</Filter>
     </ClCompile>
-    <ClCompile Include="Win32\ICometEngine.cpp">
+    <ClCompile Include="Core\Renderer\Renderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\DLLCometEngine.cpp">
       <Filter>ClientWin32</Filter>
     </ClCompile>
   </ItemGroup>
@@ -15,6 +18,9 @@
     <Filter Include="Debug">
       <UniqueIdentifier>{90c03841-750f-41eb-940b-5608212f769c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{59a10958-581e-4bb5-8c75-3706a9a2325f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\CometEngine\__Debug.h">
@@ -22,6 +28,9 @@
     </ClInclude>
     <ClInclude Include="Win32\CometEngineWin32.h">
       <Filter>ClientWin32</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer\Renderer.h">
+      <Filter>Renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

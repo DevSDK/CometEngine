@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Core\Renderer\Renderer.cpp" />
     <ClCompile Include="Win32\CometEngineWin32.cpp" />
-    <ClCompile Include="Win32\ICometEngine.cpp" />
+    <ClCompile Include="Win32\DLLCometEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\CometEngine\__Debug.h" />
+    <ClInclude Include="Core\Renderer\Renderer.h" />
     <ClInclude Include="Win32\CometEngineWin32.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
