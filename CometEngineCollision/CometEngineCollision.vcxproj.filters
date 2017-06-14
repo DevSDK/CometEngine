@@ -13,21 +13,5 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Win32">
-      <UniqueIdentifier>{6f063216-77fd-4617-b931-253a9db40cf6}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Win32\CometEngineWin32.h">
-      <Filter>소스 파일\Win32</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Win32\CometEngineWin32.cpp">
-      <Filter>소스 파일\Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="Win32\DLLCometEngineWin32.cpp">
-      <Filter>소스 파일\Win32</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

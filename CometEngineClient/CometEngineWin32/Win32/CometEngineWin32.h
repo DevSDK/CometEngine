@@ -6,7 +6,6 @@
 #include <d3dcompiler.h>
 #include <assert.h>
 #include <DirectXMath.h>
-#include "..\Core\CometEngine\__Debug.h"
 #pragma comment(lib, "d3d11.lib")
 #pragma comment(lib, "D3DCompiler.lib")
 

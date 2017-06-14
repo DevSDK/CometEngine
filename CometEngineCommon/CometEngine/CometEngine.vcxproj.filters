@@ -1,14 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Win32\CometEngineWin32.cpp">
-      <Filter>ClientWin32</Filter>
-    </ClCompile>
     <ClCompile Include="Core\Renderer\Renderer.cpp">
       <Filter>Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="Win32\DLLCometEngine.cpp">
-      <Filter>ClientWin32</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -23,12 +17,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\CometEngine\__Debug.h">
-      <Filter>Debug</Filter>
-    </ClInclude>
-    <ClInclude Include="Win32\CometEngineWin32.h">
-      <Filter>ClientWin32</Filter>
-    </ClInclude>
     <ClInclude Include="Core\Renderer\Renderer.h">
       <Filter>Renderer</Filter>
     </ClInclude>
