@@ -1,0 +1,12 @@
+D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineLib.dll.config
+D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineLib.dll
+D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineLib.pdb
+D:\Projects\Git\CometEngine\CometEngine\CometEngineLib\obj\Debug\CometEngineLib.dll
+D:\Projects\Git\CometEngine\CometEngine\CometEngineLib\obj\Debug\CometEngineLib.pdb
+D:\Projects\Git\CometEngine\CometEngine\CometEngineLib\obj\Debug\CometEngineLib.csprojResolveAssemblyReference.cache
+D:\Projects\Git\CometEngine\CometEngine\CometEngineCommon\x64\Debug\CometEngineLib.dll.config
+D:\Projects\Git\CometEngine\CometEngine\CometEngineCommon\x64\Debug\CometEngineLib.dll
+D:\Projects\Git\CometEngine\CometEngine\CometEngineCommon\x64\Debug\CometEngineLib.pdb
+D:\Projects\Git\CometEngine\CometEngine\CometEngineCommon\CometEngineLib\obj\Debug\CometEngineLib.csprojResolveAssemblyReference.cache
+D:\Projects\Git\CometEngine\CometEngine\CometEngineCommon\CometEngineLib\obj\Debug\CometEngineLib.dll
+D:\Projects\Git\CometEngine\CometEngine\CometEngineCommon\CometEngineLib\obj\Debug\CometEngineLib.pdb

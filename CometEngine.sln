@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CometEngineTester", "CometEngineTester\CometEngineTester.csproj", "{3E0481FD-4637-41C3-A02F-00E7BAB13B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CometEngineLib", "CometEngineLib\CometEngineLib.csproj", "{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CometEngineCommon", "CometEngineCommon", "{DCF9EFA7-6F8C-4C6A-978E-0DC09F123A7E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CometEngine", "CometEngine\CometEngine.vcxproj", "{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CometEngine", "CometEngineCommon\CometEngine\CometEngine.vcxproj", "{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CometEngineLib", "CometEngineCommon\CometEngineLib\CometEngineLib.csproj", "{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CometEngineServer", "CometEngineServer", "{94A60AF5-381D-4C94-9AE2-45B6735B0A81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CometEngineClient", "CometEngineClient", "{929C1CEB-9A8A-47A9-940B-6D556EFD9FEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,16 @@ Global
 		{3E0481FD-4637-41C3-A02F-00E7BAB13B32}.Release|x64.Build.0 = Release|Any CPU
 		{3E0481FD-4637-41C3-A02F-00E7BAB13B32}.Release|x86.ActiveCfg = Release|Any CPU
 		{3E0481FD-4637-41C3-A02F-00E7BAB13B32}.Release|x86.Build.0 = Release|Any CPU
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x64.ActiveCfg = Debug|x64
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x64.Build.0 = Debug|x64
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x86.Build.0 = Debug|Win32
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|Any CPU.ActiveCfg = Release|Win32
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x64.ActiveCfg = Release|x64
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x64.Build.0 = Release|x64
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x86.ActiveCfg = Release|Win32
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x86.Build.0 = Release|Win32
 		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -43,18 +59,12 @@ Global
 		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}.Release|x64.Build.0 = Release|Any CPU
 		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}.Release|x86.ActiveCfg = Release|Any CPU
 		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427}.Release|x86.Build.0 = Release|Any CPU
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x64.ActiveCfg = Debug|x64
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x64.Build.0 = Debug|x64
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x86.ActiveCfg = Debug|Win32
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Debug|x86.Build.0 = Debug|Win32
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|Any CPU.ActiveCfg = Release|Win32
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x64.ActiveCfg = Release|x64
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x64.Build.0 = Release|x64
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x86.ActiveCfg = Release|Win32
-		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30D58CF3-B039-4164-A4D0-3D0BA15B94CE} = {DCF9EFA7-6F8C-4C6A-978E-0DC09F123A7E}
+		{7D8FAC87-0B3E-43B8-A0A4-B996A2A12427} = {DCF9EFA7-6F8C-4C6A-978E-0DC09F123A7E}
 	EndGlobalSection
 EndGlobal

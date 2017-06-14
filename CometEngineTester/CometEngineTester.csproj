@@ -52,7 +52,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CometEngineLib\CometEngineLib.csproj">
+    <ProjectReference Include="..\CometEngineCommon\CometEngineLib\CometEngineLib.csproj">
       <Project>{7d8fac87-0b3e-43b8-a0a4-b996a2a12427}</Project>
       <Name>CometEngineLib</Name>
     </ProjectReference>
