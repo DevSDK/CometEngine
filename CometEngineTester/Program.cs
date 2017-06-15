@@ -1,4 +1,4 @@
-﻿using CELib.Core;
+﻿using CometEngine.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,17 @@ namespace CometEngineTester
     {
         static void Main(string[] args)
         {
-            CometEngine.Launch("TITLE", 1200, 600, WIndowModes.DEFAULT, true, 4);
+            CometEngineClient.Init("TITLE", 1200, 600, WIndowModes.DEFAULT, 1, 1);
+        
+
+            // TODO: Init Renderer 
+
+
+
+
+            CometEngineClient.Launch();
+
+
         }
     }
 }

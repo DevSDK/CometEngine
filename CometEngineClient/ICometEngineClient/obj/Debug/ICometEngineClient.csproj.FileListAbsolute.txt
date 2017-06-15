@@ -1,0 +1,6 @@
+D:\Projects\Git\CometEngine\CometEngine\CometEngineClient\ICometEngineClient\bin\Debug\ICometEngineClient.dll.config
+D:\Projects\Git\CometEngine\CometEngine\CometEngineClient\ICometEngineClient\bin\Debug\ICometEngineClient.dll
+D:\Projects\Git\CometEngine\CometEngine\CometEngineClient\ICometEngineClient\bin\Debug\ICometEngineClient.pdb
+D:\Projects\Git\CometEngine\CometEngine\CometEngineClient\ICometEngineClient\obj\Debug\ICometEngineClient.dll
+D:\Projects\Git\CometEngine\CometEngine\CometEngineClient\ICometEngineClient\obj\Debug\ICometEngineClient.pdb
+D:\Projects\Git\CometEngine\CometEngine\CometEngineClient\ICometEngineClient\obj\Debug\ICometEngineClient.csprojResolveAssemblyReference.cache

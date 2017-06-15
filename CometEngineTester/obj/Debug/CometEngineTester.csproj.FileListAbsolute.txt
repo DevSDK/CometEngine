@@ -1,6 +1,6 @@
-D:\Projects\Git\CometEngine\CometEngine\CometEngineTester\obj\Debug\CometEngineTester.csprojResolveAssemblyReference.cache
 D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineTester.exe.config
 D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineTester.exe
 D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineTester.pdb
+D:\Projects\Git\CometEngine\CometEngine\CometEngineTester\obj\Debug\CometEngineTester.csprojResolveAssemblyReference.cache
 D:\Projects\Git\CometEngine\CometEngine\CometEngineTester\obj\Debug\CometEngineTester.exe
 D:\Projects\Git\CometEngine\CometEngine\CometEngineTester\obj\Debug\CometEngineTester.pdb

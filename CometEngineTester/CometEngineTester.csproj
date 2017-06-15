@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,9 +53,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CometEngineCommon\CometEngineLib\CometEngineLib.csproj">
-      <Project>{7d8fac87-0b3e-43b8-a0a4-b996a2a12427}</Project>
-      <Name>CometEngineLib</Name>
+    <ProjectReference Include="..\CometEngineClient\ICometEngineClient\ICometEngineClient.csproj">
+      <Project>{ce4b5d74-d462-48d6-bfba-2174aac1048d}</Project>
+      <Name>ICometEngineClient</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

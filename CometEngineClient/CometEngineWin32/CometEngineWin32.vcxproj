@@ -22,8 +22,13 @@
     <ClInclude Include="Win32\CometEngineWin32.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLExport\DLLCometEngineWin32.cpp" />
     <ClCompile Include="Win32\CometEngineWin32.cpp" />
-    <ClCompile Include="Win32\DLLCometEngineWin32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CometEngineRenderer\CometEngineRenderer.vcxproj">
+      <Project>{1097d1b2-b907-4293-812e-4a7a3f0f4c80}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -51,6 +56,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <WindowsAppContainer>true</WindowsAppContainer>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -99,6 +105,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
