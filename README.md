@@ -44,7 +44,9 @@ CometEngine의 모듈들:
 
  __Server__ Multi-Core Processing, GPGPU를 활용해 효율적으로 서버를 처리하고, 데이터베이스관련 도구를 제공
  
+ 게임 개발자가 사용할 스크립트 언어는 C#입니다.
  
+게임엔진 내부는 C++로 구성되어 있고, DLL로 제공됩니다.
  
  ## Design of Librarys
  
@@ -146,6 +148,9 @@ The __Client__ is Client Modules for Windows Client [ Win32 DeskTop, UWP]
 
 The __Server__ is Server Modules for Server side. That can support GPGUP, DB, Multi-Core  
 
+The Script Language is C# for Game Developer.
+
+Game Engine Layer implement C++ Language and Provide DLL
 
 ## Design Of Librarys
    
