@@ -1,4 +1,4 @@
-
+﻿
 #include <Windows.h>
 #include <string>
 #include "../Win32/CometEngineWin32.h"

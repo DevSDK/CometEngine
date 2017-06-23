@@ -2,7 +2,7 @@
 \label{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}\index{Free\+List\+Allocator@{Free\+List\+Allocator}}
 
 
-Free-\/\+List¸¦ ±â¹ÝÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Þ¸ð¸® ÇÒ´çÀÚÀÌ´Ù.  
+Free-\/\+Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìžì´ë‹¤.  
 
 
 
@@ -38,11 +38,11 @@ struct \hyperlink{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocato
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_ae13641cb77ff097ec23c1a6112b2e6c6}{Free\+List\+Allocator} (void $\ast$i\+\_\+\+Memory\+Block, \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8} i\+\_\+align, \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} i\+\_\+\+Memory\+Size, \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} i\+\_\+offset=0)
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Free\+List\+Allocator} »ý¼ºÀÚ. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Free\+List\+Allocator} ìƒì„±ìž. \end{DoxyCompactList}\item 
 virtual void $\ast$ \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_a73ff0a374ba86a2c447aaf05ad04e932}{alloc} (\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} i\+\_\+byte) override
-\begin{DoxyCompactList}\small\item\em i\+\_\+byte ¸¸Å­ ¸Þ¸ð¸®¸¦ ÇÒ´çÇÕ´Ï´Ù. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em i\+\_\+byte ë§Œí¼ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•©ë‹ˆë‹¤. \end{DoxyCompactList}\item 
 virtual void \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_ab7a97e4b1500c7ef2c2edc3bec28a84f}{dealloc} (void $\ast$i\+\_\+\+Adress) override
-\begin{DoxyCompactList}\small\item\em i\+\_\+\+Adress°¡ °¡¸£Å°°í ÀÖ´Â ¸Þ¸ð¸®¸¦ ÇÒ´ç ÇìÁ¦ÇÕ´Ï´Ù. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em i\+\_\+\+Adressê°€ ê°€ë¥´í‚¤ê³  ìžˆëŠ” ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ í—¤ì œí•©ë‹ˆë‹¤. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected ì†ì„±}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,9 +66,9 @@ void $\ast$ \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator
 
 
 \subsection{ìƒì„¸í•œ ì„¤ëª…}
-Free-\/\+List¸¦ ±â¹ÝÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Þ¸ð¸® ÇÒ´çÀÚÀÌ´Ù. 
+Free-\/\+Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìžì´ë‹¤. 
 
-ÇÒ´çµÈ ¸Þ¸ð¸® ºí·ÏÀ» °¡Áö°í, Free-\/\+List¸¦ ±¸¼ºÇÏ¿©, ÃÖÃÊ ÀûÇÕ ¸Þ¸ð¸® ÇÒ´ç À§Ä¡¸¦ Ã£¾Æ ÇÒ´çÇØÁÖ´Â ¿ªÇÒÀ» ÇÑ´Ù.
+í• ë‹¹ëœ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ê°€ì§€ê³ , Free-\/\+Listë¥¼ êµ¬ì„±í•˜ì—¬, ìµœì´ˆ ì í•© ë©”ëª¨ë¦¬ í• ë‹¹ ìœ„ì¹˜ë¥¼ ì°¾ì•„ í• ë‹¹í•´ì£¼ëŠ” ì—­í• ì„ í•œë‹¤.
 
 \begin{DoxyAuthor}{ìž‘ì„±ìž}
 Dev S\+DK, \href{mailto:k_sdk@naver.com}{\tt k\+\_\+sdk@naver.\+com} 
@@ -94,17 +94,17 @@ Comet\+Engine\+Memory.\+h íŒŒì¼ì˜ 76 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë‹¤
 
 
 
-\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Free\+List\+Allocator} »ý¼ºÀÚ. 
+\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Free\+List\+Allocator} ìƒì„±ìž. 
 
 
 \begin{DoxyParams}{ë§¤ê°œë³€ìˆ˜}
-{\em void$\ast$} & i\+\_\+\+Memory\+Block »ý¼ºÇÑ ¸Þ¸ð¸® ºí·ÏÀ» ÀÔ·ÂÀ¸·Î ¹Þ´Â´Ù. 16¹ÙÀÌÆ®º¸´Ù Ä¿¾ßÇÑ´Ù. \\
+{\em void$\ast$} & i\+\_\+\+Memory\+Block ìƒì„±í•œ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ìž…ë ¥ìœ¼ë¡œ ë°›ëŠ”ë‹¤. 16ë°”ì´íŠ¸ë³´ë‹¤ ì»¤ì•¼í•œë‹¤. \\
 \hline
-{\em \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8}} & i\+\_\+align ¸Þ¸ð¸® Á¤·Ä Å©±â \\
+{\em \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8}} & i\+\_\+align ë©”ëª¨ë¦¬ ì •ë ¬ í¬ê¸° \\
 \hline
-{\em \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}} & i\+\_\+\+Memory\+Size »ç¿ëÇÒ ¸Þ¸ð¸®ÀÇ Å©±â. \\
+{\em \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}} & i\+\_\+\+Memory\+Size ì‚¬ìš©í•  ë©”ëª¨ë¦¬ì˜ í¬ê¸°. \\
 \hline
-{\em \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}} & i\+\_\+offset ¸Þ¸ð¸®ÀÇ ½ÃÀÛ À§Ä¡¸¦ ¾Ë¸®´Â offset default=0 \\
+{\em \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}} & i\+\_\+offset ë©”ëª¨ë¦¬ì˜ ì‹œìž‘ ìœ„ì¹˜ë¥¼ ì•Œë¦¬ëŠ” offset default=0 \\
 \hline
 \end{DoxyParams}
 
@@ -131,15 +131,15 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 54 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë
 
 
 
-i\+\_\+byte ¸¸Å­ ¸Þ¸ð¸®¸¦ ÇÒ´çÇÕ´Ï´Ù. 
+i\+\_\+byte ë§Œí¼ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•©ë‹ˆë‹¤. 
 
 
 \begin{DoxyParams}{ë§¤ê°œë³€ìˆ˜}
-{\em \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}} & i\+\_\+byte ¸Þ¸ð¸® ÇÒ´ç Å©±â \\
+{\em \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}} & i\+\_\+byte ë©”ëª¨ë¦¬ í• ë‹¹ í¬ê¸° \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{ë°˜í™˜ê°’}
-ÇÒ´çµÈ ¸Þ¸ð¸®ÀÇ ½ÃÀÛ ÁÖ¼Ò¸¦ ¹ÝÈ¯ 
+í• ë‹¹ëœ ë©”ëª¨ë¦¬ì˜ ì‹œìž‘ ì£¼ì†Œë¥¼ ë°˜í™˜ 
 \end{DoxyReturn}
 
 
@@ -152,20 +152,20 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 62 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë
 
 \begin{DoxyCode}
 63 \{
-64     \textcolor{comment}{//Iteration ¿¡ ÇÊ¿äÇÑ Node¸¦ ´ëÀÔ}
+64     \textcolor{comment}{//Iteration ì— í•„ìš”í•œ Nodeë¥¼ ëŒ€ìž…}
 65     FreeBlockType* block = \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_a9e6f8b10d6e94738d154d9f7c72d2538}{m\_FreeBlock};
 66     FreeBlockType* preblock = \textcolor{keyword}{nullptr};
 67 
-68     \textcolor{comment}{//ÃÖÃÊÀûÇÕ À§Ä¡¸¦ Ã£±âÀ§ÇÑ ·çÇÁ.}
+68     \textcolor{comment}{//ìµœì´ˆì í•© ìœ„ì¹˜ë¥¼ ì°¾ê¸°ìœ„í•œ ë£¨í”„.}
 69     \textcolor{comment}{//First-Fit Find Allocation Position}
 70     \textcolor{keywordflow}{while} (block != \textcolor{keyword}{nullptr})
 71     \{
-72         \textcolor{comment}{//µ¥ÀÌÅÍ Á¤·ÄÀ» À§ÇÑ °ø°£Å©±â}
+72         \textcolor{comment}{//ë°ì´í„° ì •ë ¬ì„ ìœ„í•œ ê³µê°„í¬ê¸°}
 73         \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type::uint8} adjustment = \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19}{Utils::alignForwardHeader}(block, 
       \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a01f973630e3c1ac98b9defda193793b8}{m\_Align}, \textcolor{keyword}{sizeof}(MemoryHeader));
 74         \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type::size\_t} request\_size = i\_size + adjustment;
 75         
-76         \textcolor{comment}{//ÇÒ´çÇÒ ¼ö ÀÖ´Â ºí·ÏÀ» Ã£´Â´Ù. (ÃÖÃÊÀûÇÕ)}
+76         \textcolor{comment}{//í• ë‹¹í•  ìˆ˜ ìžˆëŠ” ë¸”ë¡ì„ ì°¾ëŠ”ë‹¤. (ìµœì´ˆì í•©)}
 77         \textcolor{keywordflow}{if} (block->Size < request\_size)
 78         \{
 79             preblock = block;
@@ -173,15 +173,15 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 62 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë
 81             \textcolor{keywordflow}{continue};
 82         \}
 83         
-84         \textcolor{comment}{//±¸Á¶Ã¼°¡ AlignÀ» À¯ÁöÇÏ°í ÀÖ´ÂÁö Ã¼Å©.}
+84         \textcolor{comment}{//êµ¬ì¡°ì²´ê°€ Alignì„ ìœ ì§€í•˜ê³  ìžˆëŠ”ì§€ ì²´í¬.}
 85         static\_assert(\textcolor{keyword}{sizeof}(MemoryHeader) >= \textcolor{keyword}{sizeof}(FreeBlockType), \textcolor{stringliteral}{"sizeof(AdjustmentHeader) >=
        sizeof(FreeBlockType)"});
 86 
 87 
-88         \textcolor{comment}{//¿äÃ» ºí·Ï Å©±â°¡, Å¸ÀÌÆ® ÇÏ¸é}
+88         \textcolor{comment}{//ìš”ì²­ ë¸”ë¡ í¬ê¸°ê°€, íƒ€ì´íŠ¸ í•˜ë©´}
 89         \textcolor{keywordflow}{if} (block->Size - request\_size <= \textcolor{keyword}{sizeof}(MemoryHeader))
 90         \{
-91             \textcolor{comment}{//¿äÃ»Å©±â¸¦ ºí·ÏÀÇ Å©±â·Î ¼³Á¤ÇÔ}
+91             \textcolor{comment}{//ìš”ì²­í¬ê¸°ë¥¼ ë¸”ë¡ì˜ í¬ê¸°ë¡œ ì„¤ì •í•¨}
 92             request\_size = block->Size;
 93             \textcolor{keywordflow}{if} (preblock != \textcolor{keyword}{nullptr})
 94                 preblock->Next = block->Next;
@@ -190,11 +190,11 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 62 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë
 97         \}
 98         \textcolor{keywordflow}{else}
 99         \{
-100             \textcolor{comment}{//ÃæºÐÇÑ °ø°£ÀÌ ÀÖ´Ù¸é,}
+100             \textcolor{comment}{//ì¶©ë¶„í•œ ê³µê°„ì´ ìžˆë‹¤ë©´,}
 101             FreeBlockType* next = (FreeBlockType*)\hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a93ae170a43dac9da0116187242b35a6f}{Utils::Add}(block, (\textcolor{keywordtype}{void}*)request\_size);
-102             \textcolor{comment}{//¸Þ¸ð¸® ºí·ÏÀ» ÀÚ¸£°í}
+102             \textcolor{comment}{//ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ìžë¥´ê³ }
 103             next->Size = block->Size - request\_size;
-104             \textcolor{comment}{//ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.}
+104             \textcolor{comment}{//ì´ ë¸”ë¡ì„ ì œì™¸í•œ FreeListë¼ë¦¬ ì—°ê²°ì‹œí‚¨ë‹¤.}
 105             next->Next = block->Next;
 106 
 107             \textcolor{keywordflow}{if} (preblock != \textcolor{keyword}{nullptr})
@@ -202,9 +202,9 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 62 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë
 109             \textcolor{keywordflow}{else}
 110                 \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_a9e6f8b10d6e94738d154d9f7c72d2538}{m\_FreeBlock} = next;
 111         \}
-112         \textcolor{comment}{//ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.}
+112         \textcolor{comment}{//í•´ë”ë¥¼ ë„£ê³ , ì •ë ¬ëœ ì£¼ì†Œê°’ì„ ìœ ì§€í•˜ê¸°ìœ„í•œ adjustment ê°’ì„ ë„£ëŠ”ë‹¤.}
 113         \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr} adress = (\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})block + adjustment;
-114         \textcolor{comment}{//ÇØ´õ¸¦ ³ÖÀ½}
+114         \textcolor{comment}{//í•´ë”ë¥¼ ë„£ìŒ}
 115         MemoryHeader* header = (MemoryHeader*)(adress - \textcolor{keyword}{sizeof}(MemoryHeader));
 116         header->\hyperlink{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type_ae6cf85bdf7b52a990d4428449e599c8e}{Size} = request\_size;
 117         header->Adjustment = adjustment;
@@ -244,11 +244,11 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 62 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë
 
 
 
-i\+\_\+\+Adress°¡ °¡¸£Å°°í ÀÖ´Â ¸Þ¸ð¸®¸¦ ÇÒ´ç ÇìÁ¦ÇÕ´Ï´Ù. 
+i\+\_\+\+Adressê°€ ê°€ë¥´í‚¤ê³  ìžˆëŠ” ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ í—¤ì œí•©ë‹ˆë‹¤. 
 
 
 \begin{DoxyParams}{ë§¤ê°œë³€ìˆ˜}
-{\em void$\ast$} & i\+\_\+\+Adress ÇÒ´ç ÇìÁ¦ÇÒ ¸Þ¸ð¸® ÁÖ¼Ò \\
+{\em void$\ast$} & i\+\_\+\+Adress í• ë‹¹ í—¤ì œí•  ë©”ëª¨ë¦¬ ì£¼ì†Œ \\
 \hline
 \end{DoxyParams}
 
@@ -263,17 +263,17 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 131 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆ
 \begin{DoxyCode}
 132 \{
 133     \hyperlink{_comet_engine_types_8h_a9ade07b7881f4aeffa184676c123b87c}{CEAssert}(i\_Adress != \textcolor{keyword}{nullptr});
-134     \textcolor{comment}{//ÇÒ´çÇß´ø ¸Þ¸ð¸®¿¡¼­ ÇØ´õ°ªÀ» ÃßÃâ}
+134     \textcolor{comment}{//í• ë‹¹í–ˆë˜ ë©”ëª¨ë¦¬ì—ì„œ í•´ë”ê°’ì„ ì¶”ì¶œ}
 135     MemoryHeader* header = (MemoryHeader*)\hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a4e360b8988f0de099daa987e3b5f09ed}{Utils::Sub}(i\_Adress, (\textcolor{keywordtype}{void}*)\textcolor{keyword}{sizeof}(MemoryHeader));
 136 
 137 
-138     \textcolor{comment}{//¸Þ¸ð¸® ºí·°ÀÇ ½ÃÀÛ Æ÷ÀÎÅÍ}
+138     \textcolor{comment}{//ë©”ëª¨ë¦¬ ë¸”ëŸ­ì˜ ì‹œìž‘ í¬ì¸í„°}
 139     \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr} block\_begin = ((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})i\_Adress) - header->Adjustment;
 140     \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type::size\_t} block\_size = header->Size;
-141     \textcolor{comment}{//¸Þ¸ð¸® ºí·°ÀÇ ³¡ Æ÷ÀÎÅÍ}
+141     \textcolor{comment}{//ë©”ëª¨ë¦¬ ë¸”ëŸ­ì˜ ë í¬ì¸í„°}
 142     \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr} block\_end = block\_begin + block\_size;
 143 
-144     \textcolor{comment}{//ÃÊ±âÈ­¸¦ ´«À¸·Î È®ÀÎÇÏ±â À§ÇØ 0À¸·Î  ÃÊ±âÈ­}
+144     \textcolor{comment}{//ì´ˆê¸°í™”ë¥¼ ëˆˆìœ¼ë¡œ í™•ì¸í•˜ê¸° ìœ„í•´ 0ìœ¼ë¡œ  ì´ˆê¸°í™”}
 145 \textcolor{preprocessor}{#ifdef \_DEBUG}
 146     \textcolor{keywordflow}{for} (\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr} i = (\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})i\_Adress; i != block\_end; i++)
 147     \{
@@ -285,7 +285,7 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 131 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆ
 153 
 154     \textcolor{keywordflow}{while} (block != \textcolor{keyword}{nullptr})
 155     \{
-156         \textcolor{comment}{//Á¤·ÄµÈ ¸®½ºÆ®¸¦ À¯ÁöÇÏ±â À§ÇÑ À§Ä¡ Å½»ö}
+156         \textcolor{comment}{//ì •ë ¬ëœ ë¦¬ìŠ¤íŠ¸ë¥¼ ìœ ì§€í•˜ê¸° ìœ„í•œ ìœ„ì¹˜ íƒìƒ‰}
 157         \textcolor{keywordflow}{if} ((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})block >= block\_end)
 158             \textcolor{keywordflow}{break};
 159         preblock = block;
@@ -294,8 +294,8 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 131 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆ
 162 
 163     \textcolor{keywordflow}{if} (preblock == \textcolor{keyword}{nullptr})
 164     \{
-165         \textcolor{comment}{//ÀÌÀü ºí·ÏÀÌ ¾ø´Â »óÅÂ¶ó¸é }
-166         \textcolor{comment}{//ÇöÁ¦ ºí·ÏÀ» ±âÁ¸ ºí·ÏÀÇ ´ÙÀ½À» °¡¸£Å°°Ô ÇÑµÚ ±âÁ¸ºí·ÏÀ» ÇöÁ¦ºí·ÏÀ¸·Î ¹Ù²Þ.( ±×³É µÚ¿¡µÎ°í ¿¬°á)}
+165         \textcolor{comment}{//ì´ì „ ë¸”ë¡ì´ ì—†ëŠ” ìƒíƒœë¼ë©´ }
+166         \textcolor{comment}{//í˜„ì œ ë¸”ë¡ì„ ê¸°ì¡´ ë¸”ë¡ì˜ ë‹¤ìŒì„ ê°€ë¥´í‚¤ê²Œ í•œë’¤ ê¸°ì¡´ë¸”ë¡ì„ í˜„ì œë¸”ë¡ìœ¼ë¡œ ë°”ê¿ˆ.( ê·¸ëƒ¥ ë’¤ì—ë‘ê³  ì—°ê²°)}
 167         preblock = (FreeBlockType*)block\_begin;
 168         preblock->\hyperlink{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type_ae6cf85bdf7b52a990d4428449e599c8e}{Size} = block\_size;
 169         preblock->Next = \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_a9e6f8b10d6e94738d154d9f7c72d2538}{m\_FreeBlock};
@@ -303,21 +303,21 @@ Comet\+Engine\+Memory.\+cpp íŒŒì¼ì˜ 131 ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆ
 171     \}
 172     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr}) preblock + preblock->Size == block\_begin)
 173     \{
-174         \textcolor{comment}{//µÎ ºí·ÏÀÌ ¹Ù·Î ¿À¸¥ÂÊÀ¸·Î ¿¬¼ÓÀûÀ¸·Î ÀÖ´Ù¸é, ºí·ÏÀÇ »çÀÌÁî¸¦ Å°¿ò.}
+174         \textcolor{comment}{//ë‘ ë¸”ë¡ì´ ë°”ë¡œ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì—°ì†ì ìœ¼ë¡œ ìžˆë‹¤ë©´, ë¸”ë¡ì˜ ì‚¬ì´ì¦ˆë¥¼ í‚¤ì›€.}
 175         preblock->\hyperlink{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type_ae6cf85bdf7b52a990d4428449e599c8e}{Size} += block\_size;
 176     \}
 177     \textcolor{keywordflow}{else}
 178     \{
-179         \textcolor{comment}{//ºí·Ï ³ëµå¸¦ ¸¸µë}
+179         \textcolor{comment}{//ë¸”ë¡ ë…¸ë“œë¥¼ ë§Œë“¬}
 180         FreeBlockType* freeblock = (FreeBlockType*)block\_begin;
 181         freeblock->Size = block\_size;
-182         \textcolor{comment}{//³ëµå Áß°£¿¡ ³¢¿ö³ÖÀ½. preblock->freeblock-> preblockÀÌ °¡¸£Å°´Â ³ëµå}
+182         \textcolor{comment}{//ë…¸ë“œ ì¤‘ê°„ì— ë¼ì›Œë„£ìŒ. preblock->freeblock-> preblockì´ ê°€ë¥´í‚¤ëŠ” ë…¸ë“œ}
 183         freeblock->Next = preblock->Next;
 184         preblock->Next = freeblock;
 185         preblock = freeblock;
 186     \}
 187 
-188     \textcolor{comment}{//¿ÞÂÊÀ¸·Î ³ëµå°¡ ¿·¿¡ ÀÖÀ¸¸é, µÎ ³ëµå¸¦ ¿¬°áÇÔ}
+188     \textcolor{comment}{//ì™¼ìª½ìœ¼ë¡œ ë…¸ë“œê°€ ì˜†ì— ìžˆìœ¼ë©´, ë‘ ë…¸ë“œë¥¼ ì—°ê²°í•¨}
 189     \textcolor{keywordflow}{if} (block != \textcolor{keyword}{nullptr} && (\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})block == block\_end)
 190     \{
 191         preblock->Size += block->Size;

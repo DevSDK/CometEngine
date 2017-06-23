@@ -1,4 +1,4 @@
-#define UNICODE
+﻿#define UNICODE
 #include "CometEngineWin32.h"
 #include <string>
 using namespace CometEngine;

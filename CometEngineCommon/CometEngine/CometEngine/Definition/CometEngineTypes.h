@@ -1,4 +1,4 @@
-#ifndef __COMETENGINE_TYPES_H__
+﻿#ifndef __COMETENGINE_TYPES_H__
 #define __COMETENGINE_TYPES_H__
 #include <vcruntime.h>
 #include <assert.h>

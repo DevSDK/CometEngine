@@ -1,4 +1,4 @@
-
+ï»¿
 #ifndef __COMMON_COMETENGINE_MEMORY__
 #define __COMMON_COMETENGINE_MEMORY__
 
@@ -64,10 +64,10 @@ namespace CometEngine
 			};
 
 			/**
-			 * @brief Free-List¸¦ ±â¹İÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Ş¸ğ¸® ÇÒ´çÀÚÀÌ´Ù.
+			 * @brief Free-Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìì´ë‹¤.
 			 * @details
-			 * ÇÒ´çµÈ ¸Ş¸ğ¸® ºí·ÏÀ» °¡Áö°í, Free-List¸¦ ±¸¼ºÇÏ¿©, ÃÖÃÊ ÀûÇÕ
-			 * ¸Ş¸ğ¸® ÇÒ´ç À§Ä¡¸¦ Ã£¾Æ ÇÒ´çÇØÁÖ´Â ¿ªÇÒÀ» ÇÑ´Ù.
+			 * í• ë‹¹ëœ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ê°€ì§€ê³ , Free-Listë¥¼ êµ¬ì„±í•˜ì—¬, ìµœì´ˆ ì í•©
+			 * ë©”ëª¨ë¦¬ í• ë‹¹ ìœ„ì¹˜ë¥¼ ì°¾ì•„ í• ë‹¹í•´ì£¼ëŠ” ì—­í• ì„ í•œë‹¤.
 			 *
 			 * @author Dev SDK, k_sdk@naver.com
 			 * @date 2017-06-23
@@ -91,25 +91,25 @@ namespace CometEngine
 			public:
 				
 				/**
-				* @brief FreeListAllocator »ı¼ºÀÚ.
-				* @param void* i_MemoryBlock »ı¼ºÇÑ ¸Ş¸ğ¸® ºí·ÏÀ» ÀÔ·ÂÀ¸·Î ¹Ş´Â´Ù. 16¹ÙÀÌÆ®º¸´Ù Ä¿¾ßÇÑ´Ù.
-				* @param Type::uint8 i_align ¸Ş¸ğ¸® Á¤·Ä Å©±â
-				* @param Type::size_t i_MemorySize »ç¿ëÇÒ ¸Ş¸ğ¸®ÀÇ Å©±â. 
-				* @param Type::size_t i_offset ¸Ş¸ğ¸®ÀÇ ½ÃÀÛ À§Ä¡¸¦ ¾Ë¸®´Â offset default=0
+				* @brief FreeListAllocator ìƒì„±ì.
+				* @param void* i_MemoryBlock ìƒì„±í•œ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ì…ë ¥ìœ¼ë¡œ ë°›ëŠ”ë‹¤. 16ë°”ì´íŠ¸ë³´ë‹¤ ì»¤ì•¼í•œë‹¤.
+				* @param Type::uint8 i_align ë©”ëª¨ë¦¬ ì •ë ¬ í¬ê¸°
+				* @param Type::size_t i_MemorySize ì‚¬ìš©í•  ë©”ëª¨ë¦¬ì˜ í¬ê¸°. 
+				* @param Type::size_t i_offset ë©”ëª¨ë¦¬ì˜ ì‹œì‘ ìœ„ì¹˜ë¥¼ ì•Œë¦¬ëŠ” offset default=0
 				*/
 				FreeListAllocator(void* i_MemoryBlock, Type::uint8 i_align, Type::size_t i_MemorySize, Type::size_t i_offset = 0);
 
 
 				/**
-				* @brief i_byte ¸¸Å­ ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÕ´Ï´Ù.
-				* @param Type::size_t i_byte ¸Ş¸ğ¸® ÇÒ´ç Å©±â
-				* @return ÇÒ´çµÈ ¸Ş¸ğ¸®ÀÇ ½ÃÀÛ ÁÖ¼Ò¸¦ ¹İÈ¯
+				* @brief i_byte ë§Œí¼ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•©ë‹ˆë‹¤.
+				* @param Type::size_t i_byte ë©”ëª¨ë¦¬ í• ë‹¹ í¬ê¸°
+				* @return í• ë‹¹ëœ ë©”ëª¨ë¦¬ì˜ ì‹œì‘ ì£¼ì†Œë¥¼ ë°˜í™˜
 				*/
 				virtual void * alloc(Type::size_t i_byte) override;
 				
 				/**
-				* @brief i_Adress°¡ °¡¸£Å°°í ÀÖ´Â ¸Ş¸ğ¸®¸¦ ÇÒ´ç ÇìÁ¦ÇÕ´Ï´Ù.
-				* @param void* i_Adress ÇÒ´ç ÇìÁ¦ÇÒ ¸Ş¸ğ¸® ÁÖ¼Ò
+				* @brief i_Adressê°€ ê°€ë¥´í‚¤ê³  ìˆëŠ” ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ í—¤ì œí•©ë‹ˆë‹¤.
+				* @param void* i_Adress í• ë‹¹ í—¤ì œí•  ë©”ëª¨ë¦¬ ì£¼ì†Œ
 				*/
 				virtual void dealloc(void * i_Adress) override;
 

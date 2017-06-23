@@ -1,4 +1,4 @@
-#include "CometEngineDXRenderer.h"
+﻿#include "CometEngineDXRenderer.h"
 #include <DirectXColors.h>
 #include <string>
 using namespace CometEngine;

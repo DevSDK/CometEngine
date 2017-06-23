@@ -1,4 +1,4 @@
-#include "CometEngineMemory.h"
+ï»¿#include "CometEngineMemory.h"
 using namespace CometEngine;
 using namespace Core;
 
@@ -61,19 +61,19 @@ CometEngine::Core::Memory::FreeListAllocator::FreeListAllocator(void * i_MemoryB
 
 void * CometEngine::Core::Memory::FreeListAllocator::alloc(Type::size_t i_size)
 {
-	//Iteration ¿¡ ÇÊ¿äÇÑ Node¸¦ ´ëÀÔ
+	//Iteration ì— í•„ìš”í•œ Nodeë¥¼ ëŒ€ìž…
 	FreeBlockType* block = m_FreeBlock;
 	FreeBlockType* preblock = nullptr;
 
-	//ÃÖÃÊÀûÇÕ À§Ä¡¸¦ Ã£±âÀ§ÇÑ ·çÇÁ.
+	//ìµœì´ˆì í•© ìœ„ì¹˜ë¥¼ ì°¾ê¸°ìœ„í•œ ë£¨í”„.
 	//First-Fit Find Allocation Position
 	while (block != nullptr)
 	{
-		//µ¥ÀÌÅÍ Á¤·ÄÀ» À§ÇÑ °ø°£Å©±â
+		//ë°ì´í„° ì •ë ¬ì„ ìœ„í•œ ê³µê°„í¬ê¸°
 		Type::uint8 adjustment = Utils::alignForwardHeader(block, m_Align, sizeof(MemoryHeader));
 		Type::size_t request_size = i_size + adjustment;
 		
-		//ÇÒ´çÇÒ ¼ö ÀÖ´Â ºí·ÏÀ» Ã£´Â´Ù. (ÃÖÃÊÀûÇÕ)
+		//í• ë‹¹í•  ìˆ˜ ìžˆëŠ” ë¸”ë¡ì„ ì°¾ëŠ”ë‹¤. (ìµœì´ˆì í•©)
 		if (block->Size < request_size)
 		{
 			preblock = block;
@@ -81,14 +81,14 @@ void * CometEngine::Core::Memory::FreeListAllocator::alloc(Type::size_t i_size)
 			continue;
 		}
 		
-		//±¸Á¶Ã¼°¡ AlignÀ» À¯ÁöÇÏ°í ÀÖ´ÂÁö Ã¼Å©.
+		//êµ¬ì¡°ì²´ê°€ Alignì„ ìœ ì§€í•˜ê³  ìžˆëŠ”ì§€ ì²´í¬.
 		static_assert(sizeof(MemoryHeader) >= sizeof(FreeBlockType), "sizeof(AdjustmentHeader) >= sizeof(FreeBlockType)");
 
 
-		//¿äÃ» ºí·Ï Å©±â°¡, Å¸ÀÌÆ® ÇÏ¸é
+		//ìš”ì²­ ë¸”ë¡ í¬ê¸°ê°€, íƒ€ì´íŠ¸ í•˜ë©´
 		if (block->Size - request_size <= sizeof(MemoryHeader))
 		{
-			//¿äÃ»Å©±â¸¦ ºí·ÏÀÇ Å©±â·Î ¼³Á¤ÇÔ
+			//ìš”ì²­í¬ê¸°ë¥¼ ë¸”ë¡ì˜ í¬ê¸°ë¡œ ì„¤ì •í•¨
 			request_size = block->Size;
 			if (preblock != nullptr)
 				preblock->Next = block->Next;
@@ -97,11 +97,11 @@ void * CometEngine::Core::Memory::FreeListAllocator::alloc(Type::size_t i_size)
 		}
 		else
 		{
-			//ÃæºÐÇÑ °ø°£ÀÌ ÀÖ´Ù¸é,
+			//ì¶©ë¶„í•œ ê³µê°„ì´ ìžˆë‹¤ë©´,
 			FreeBlockType* next = (FreeBlockType*)Utils::Add(block, (void*)request_size);
-			//¸Þ¸ð¸® ºí·ÏÀ» ÀÚ¸£°í
+			//ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ìžë¥´ê³ 
 			next->Size = block->Size - request_size;
-			//ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.
+			//ì´ ë¸”ë¡ì„ ì œì™¸í•œ FreeListë¼ë¦¬ ì—°ê²°ì‹œí‚¨ë‹¤.
 			next->Next = block->Next;
 
 			if (preblock != nullptr)
@@ -109,9 +109,9 @@ void * CometEngine::Core::Memory::FreeListAllocator::alloc(Type::size_t i_size)
 			else
 				m_FreeBlock = next;
 		}
-		//ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.
+		//í•´ë”ë¥¼ ë„£ê³ , ì •ë ¬ëœ ì£¼ì†Œê°’ì„ ìœ ì§€í•˜ê¸°ìœ„í•œ adjustment ê°’ì„ ë„£ëŠ”ë‹¤.
 		Type::ptr adress = (Type::ptr)block + adjustment;
-		//ÇØ´õ¸¦ ³ÖÀ½
+		//í•´ë”ë¥¼ ë„£ìŒ
 		MemoryHeader* header = (MemoryHeader*)(adress - sizeof(MemoryHeader));
 		header->Size = request_size;
 		header->Adjustment = adjustment;
@@ -131,17 +131,17 @@ void * CometEngine::Core::Memory::FreeListAllocator::alloc(Type::size_t i_size)
 void CometEngine::Core::Memory::FreeListAllocator::dealloc(void * i_Adress)
 {
 	CEAssert(i_Adress != nullptr);
-	//ÇÒ´çÇß´ø ¸Þ¸ð¸®¿¡¼­ ÇØ´õ°ªÀ» ÃßÃâ
+	//í• ë‹¹í–ˆë˜ ë©”ëª¨ë¦¬ì—ì„œ í•´ë”ê°’ì„ ì¶”ì¶œ
 	MemoryHeader* header = (MemoryHeader*)Utils::Sub(i_Adress, (void*)sizeof(MemoryHeader));
 
 
-	//¸Þ¸ð¸® ºí·°ÀÇ ½ÃÀÛ Æ÷ÀÎÅÍ
+	//ë©”ëª¨ë¦¬ ë¸”ëŸ­ì˜ ì‹œìž‘ í¬ì¸í„°
 	Type::ptr block_begin = ((Type::ptr)i_Adress) - header->Adjustment;
 	Type::size_t block_size = header->Size;
-	//¸Þ¸ð¸® ºí·°ÀÇ ³¡ Æ÷ÀÎÅÍ
+	//ë©”ëª¨ë¦¬ ë¸”ëŸ­ì˜ ë í¬ì¸í„°
 	Type::ptr block_end = block_begin + block_size;
 
-	//ÃÊ±âÈ­¸¦ ´«À¸·Î È®ÀÎÇÏ±â À§ÇØ 0À¸·Î  ÃÊ±âÈ­
+	//ì´ˆê¸°í™”ë¥¼ ëˆˆìœ¼ë¡œ í™•ì¸í•˜ê¸° ìœ„í•´ 0ìœ¼ë¡œ  ì´ˆê¸°í™”
 #ifdef _DEBUG
 	for (Type::ptr i = (Type::ptr)i_Adress; i != block_end; i++)
 	{
@@ -153,7 +153,7 @@ void CometEngine::Core::Memory::FreeListAllocator::dealloc(void * i_Adress)
 
 	while (block != nullptr)
 	{
-		//Á¤·ÄµÈ ¸®½ºÆ®¸¦ À¯ÁöÇÏ±â À§ÇÑ À§Ä¡ Å½»ö
+		//ì •ë ¬ëœ ë¦¬ìŠ¤íŠ¸ë¥¼ ìœ ì§€í•˜ê¸° ìœ„í•œ ìœ„ì¹˜ íƒìƒ‰
 		if ((Type::ptr)block >= block_end)
 			break;
 		preblock = block;
@@ -162,8 +162,8 @@ void CometEngine::Core::Memory::FreeListAllocator::dealloc(void * i_Adress)
 
 	if (preblock == nullptr)
 	{
-		//ÀÌÀü ºí·ÏÀÌ ¾ø´Â »óÅÂ¶ó¸é 
-		//ÇöÁ¦ ºí·ÏÀ» ±âÁ¸ ºí·ÏÀÇ ´ÙÀ½À» °¡¸£Å°°Ô ÇÑµÚ ±âÁ¸ºí·ÏÀ» ÇöÁ¦ºí·ÏÀ¸·Î ¹Ù²Þ.( ±×³É µÚ¿¡µÎ°í ¿¬°á)
+		//ì´ì „ ë¸”ë¡ì´ ì—†ëŠ” ìƒíƒœë¼ë©´ 
+		//í˜„ì œ ë¸”ë¡ì„ ê¸°ì¡´ ë¸”ë¡ì˜ ë‹¤ìŒì„ ê°€ë¥´í‚¤ê²Œ í•œë’¤ ê¸°ì¡´ë¸”ë¡ì„ í˜„ì œë¸”ë¡ìœ¼ë¡œ ë°”ê¿ˆ.( ê·¸ëƒ¥ ë’¤ì—ë‘ê³  ì—°ê²°)
 		preblock = (FreeBlockType*)block_begin;
 		preblock->Size = block_size;
 		preblock->Next = m_FreeBlock;
@@ -171,21 +171,21 @@ void CometEngine::Core::Memory::FreeListAllocator::dealloc(void * i_Adress)
 	}
 	else if ((Type::ptr) preblock + preblock->Size == block_begin)
 	{
-		//µÎ ºí·ÏÀÌ ¹Ù·Î ¿À¸¥ÂÊÀ¸·Î ¿¬¼ÓÀûÀ¸·Î ÀÖ´Ù¸é, ºí·ÏÀÇ »çÀÌÁî¸¦ Å°¿ò.
+		//ë‘ ë¸”ë¡ì´ ë°”ë¡œ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì—°ì†ì ìœ¼ë¡œ ìžˆë‹¤ë©´, ë¸”ë¡ì˜ ì‚¬ì´ì¦ˆë¥¼ í‚¤ì›€.
 		preblock->Size += block_size;
 	}
 	else
 	{
-		//ºí·Ï ³ëµå¸¦ ¸¸µë
+		//ë¸”ë¡ ë…¸ë“œë¥¼ ë§Œë“¬
 		FreeBlockType* freeblock = (FreeBlockType*)block_begin;
 		freeblock->Size = block_size;
-		//³ëµå Áß°£¿¡ ³¢¿ö³ÖÀ½. preblock->freeblock-> preblockÀÌ °¡¸£Å°´Â ³ëµå
+		//ë…¸ë“œ ì¤‘ê°„ì— ë¼ì›Œë„£ìŒ. preblock->freeblock-> preblockì´ ê°€ë¥´í‚¤ëŠ” ë…¸ë“œ
 		freeblock->Next = preblock->Next;
 		preblock->Next = freeblock;
 		preblock = freeblock;
 	}
 
-	//¿ÞÂÊÀ¸·Î ³ëµå°¡ ¿·¿¡ ÀÖÀ¸¸é, µÎ ³ëµå¸¦ ¿¬°áÇÔ
+	//ì™¼ìª½ìœ¼ë¡œ ë…¸ë“œê°€ ì˜†ì— ìžˆìœ¼ë©´, ë‘ ë…¸ë“œë¥¼ ì—°ê²°í•¨
 	if (block != nullptr && (Type::ptr)block == block_end)
 	{
 		preblock->Size += block->Size;
