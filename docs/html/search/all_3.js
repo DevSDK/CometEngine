@@ -19,7 +19,7 @@ var searchData=
   ['cometenginewin32_2ecpp',['CometEngineWin32.cpp',['../_comet_engine_win32_8cpp.html',1,'']]],
   ['cometenginewin32_2eh',['CometEngineWin32.h',['../_comet_engine_win32_8h.html',1,'']]],
   ['core',['Core',['../namespace_comet_engine_1_1_core.html',1,'CometEngine']]],
-  ['cometengine',['CometEngine',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['comet_20engine',['Comet Engine',['../md__r_e_a_d_m_e.html',1,'']]],
   ['memory',['Memory',['../namespace_comet_engine_1_1_core_1_1_memory.html',1,'CometEngine::Core']]],
   ['renderer',['Renderer',['../namespace_comet_engine_1_1_renderer.html',1,'CometEngine']]],
   ['type',['Type',['../namespace_comet_engine_1_1_type.html',1,'CometEngine']]],

@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "CometEngine", "index.html", [
-    [ "CometEngine", "md__r_e_a_d_m_e.html", null ],
+    [ "Comet Engine", "md__r_e_a_d_m_e.html", null ],
     [ "네임스페이스", null, [
       [ "네임스페이스 목록", "namespaces.html", "namespaces" ],
       [ "네임스페이스 멤버", "namespacemembers.html", [

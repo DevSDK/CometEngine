@@ -1,6 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a73ff0a374ba86a2c447aaf05ad04e932" title="i_byte ë§Œí¼ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•©ë‹ˆë‹¤. " alt="" coords="104,83,279,139"/>
-<area shape="rect" id="node6" href="$class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#ab7a97e4b1500c7ef2c2edc3bec28a84f" title="i_Adressê°€ ê°€ë¥´í‚¤ê³  ìžˆëŠ” ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ í—¤ì œí•©ë‹ˆë‹¤. " alt="" coords="104,173,279,229"/>
+<area shape="rect" id="node2" href="$class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a73ff0a374ba86a2c447aaf05ad04e932" title="i_byte ¸¸Å­ ¸Þ¸ð¸®¸¦ ÇÒ´çÇÕ´Ï´Ù. " alt="" coords="104,83,279,139"/>
+<area shape="rect" id="node6" href="$class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#ab7a97e4b1500c7ef2c2edc3bec28a84f" title="i_Adress°¡ °¡¸£Å°°í ÀÖ´Â ¸Þ¸ð¸®¸¦ ÇÒ´ç ÇìÁ¦ÇÕ´Ï´Ù. " alt="" coords="104,173,279,229"/>
 <area shape="rect" id="node3" href="$namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a57bbceefc56fa0e2ec1e472d85ce5e19" title="CometEngine::Core::\lMemory::Utils::alignForward\lHeader" alt="" coords="327,5,511,61"/>
 <area shape="rect" id="node4" href="$namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#aa5a0140d498d631a747be87791063f2d" title="CometEngine::Core::\lMemory::Utils::alignForward\lAdjustment" alt="" coords="559,39,743,95"/>
 <area shape="rect" id="node5" href="$namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a93ae170a43dac9da0116187242b35a6f" title="CometEngine::Core::\lMemory::Utils::Add" alt="" coords="347,137,490,178"/>

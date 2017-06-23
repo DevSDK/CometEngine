@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CometEngine: CometEngine</title>
+<title>CometEngine: Comet Engine</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,13 +81,115 @@ $(document).ready(function(){initNavTree('md__r_e_a_d_m_e.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="namespace_comet_engine.html">CometEngine</a> </div>  </div>
+<div class="title">Comet Engine </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>DirectX 11 C++ , Based Game Engine. Game Engine Script Language is C#</p>
-<p>Comet Engine are 3D/2D Game Engine based C++ / DirectX The user development language of this engine is C # Game Engine C++ .dll Native Game Engine Wrapper C# .dll</p>
-<h2>BSD License</h2>
-<p>Maybe..  Using IOCP Based Net Work Module  And Grpagics Library Interface Module ( For Server side Programming and can change to Multiplatform GameEngine) And Using Collision Engine For Client And Server Side. </p>
+<div class="textblock"><h2>Introduction</h2>
+<p>_( 영알못이라 밑에 영어로 대충 써놓은건 아무말 대잔치. 젠장. )_</p>
+<h4>현제 개발 초기 (기획)단계입니다.</h4>
+<h4>아직은 보여드릴게 많지 않지만 꾸준히 방문해 주시면 감사하겠습니다. ( _ _ )</h4>
+<p><b>Comet Engine</b> 은 윈도우 게임 개발자들을 위해 개발되고 있는 오픈소스 게임엔진입니다.</p>
+<p>Win32와 UWP를 같은 코드로 동작 하게끔 개발 할 예정입니다.</p>
+<p>CometEngine은 Client - Server간의 개발을 쉽게끔 할 수 있도록 도와줄 것 입니다.</p>
+<h2>Documentation.</h2>
+<p><a href="https://devsdk.github.io/CometEngine/html/index.html">Link </a></p>
+<h2>Engine Architecture</h2>
+<p>UWP와 Win32를 동시에 지원.</p>
+<p><a class="el" href="namespace_comet_engine.html">CometEngine</a> Builder를 개발해 UWP, Win32로 빌드 할 수 있게끔 개발할 예정 -&gt; 연구가 필요.</p>
+<p>CometEngine의 모듈들: </p><pre class="fragment">CometEngineCommon
+    CometEngine.dll
+    CometEngineCollision.dll
+    CometEngineFiles.dll
+    CometEngineGeometry.dll
+    CometEngineNetwork.dll
+    CometEngineLibs.dll
+CometEngineClient
+    CometEngineDXRenderer.dll
+    CometEngineWin32.dll
+CometEngineServer
+    CometEngineDB.dll
+</pre><p>※__CometEngine Editor__ 는 추후에 추가 될 예정입니다.</p>
+<p><b>Common</b> 은 클라이언트와 서버 사이에 공통된 라이브러리, 도구, 엔진등등을 포함하고 있는 모듈 집합입니다.</p>
+<p><b>Client</b> 는 Windows 클라이언트를 위한 도구들을 포함하고 있는 모듈입니다. [Win32 DeskTop]</p>
+<p><b>Server</b> Multi-Core Processing, GPGPU를 활용해 효율적으로 서버를 처리하고, 데이터베이스관련 도구를 제공</p>
+<p>게임 개발자가 사용할 스크립트 언어는 C::입니다.</p>
+<p>게임엔진 내부는 C++로 구성되어 있고, DLL로 제공됩니다.</p>
+<h2>Design of Librarys</h2>
+<p>난수를 생성 라이브러리를 자체 제공한다. ex) 메르센 트위스터</p>
+<p>파일을 zip형태로 압축하거나, 리소스를 직접 컴파일함[암호화 지원]</p>
+<p>• 잘 알려진 파일 형식 ex) PNG, JPEG, BMP 등등은 에디터에 불러와 파싱</p>
+<p>• 자체적인 에니메이션 메커니즘이 필요 (리깅, 스켈레톤 등) </p><pre class="fragment">-만약 필요할경우, Blender 같은 Util에서 만드는 데이터를 파싱할 필요 있음.
+</pre><p>• 네트워크의 경우 Serializer를 제공, Bit 단위 전송을 최대한 지원. </p><pre class="fragment"> -C# 자체 통신은 사용하지 않고 C++ WinSock을 사용할 것, 다만 Wrapping에 주의
+</pre><p>• 게임게발자가 로우레벨 시스템을 고려하지 않도록 설계하면서도 언제든지 로우레벨에 접근이 가능하도록 설계</p>
+<p>• In-Game Profiler을 개발해 CPU,GPU, Memeory, Allocation등등을 수집 및 출력</p>
+<p>• 필요할 경우 구조를 State Machine + Pipe Line로 모듈을 구성 </p><pre class="fragment">    - ex) Animation Pipeline, Resource Processing PipeLine, etc..
+</pre><h2>Optimazation:</h2>
+<p>SSE 명령어 사용 ( 다중 명령어 병렬처리 기법 ) - 하드웨어 가속 가능 </p><pre class="fragment">• __m128
+• 전용 레지스터 ( 16바이트 범위 보장 )
+• __declspec(align(16)) type []
+• MSDN 찾아볼것
+</pre><p>메모리 Allocator구현 및 제공 </p><pre class="fragment">• 게임엔진 내에서 사용할 자료구조에 적용하면 효율적일 것으로 예상됨. ex) 렌더링 커멘드
+</pre><p>파티클 시스템을 연구할 필요가 있음. Particle의 경우 자체를 State Machine으로 만들어 GPU 에서 처리하는 쪽으로 구상중</p>
+<p>가능하다면 Collision Detection을 GPGPU로 구성</p>
+<p>OpenMP 적극 활용 ( Loop 루틴, 산술연산 등)</p>
+<h2>License:</h2>
+<p>BSD License.</p>
+<p><br />
+ <br />
+ </p><hr/>
+<h1>Comet Engine</h1>
+<h2>Introduction</h2>
+<p><b><a class="el" href="namespace_comet_engine.html">CometEngine</a></b> is Open Source Game Engine for Windows Game Developers</p>
+<p>Support Build Win32 and UWP using same code.</p>
+<p>This project is in the early stages of development.</p>
+<p>So, I can't show Engine Document not yet</p>
+<h2>Engine Architecture</h2>
+<p>Support Build Win32 and UWP at the same code:</p>
+<p>Probably Develop '<a class="el" href="namespace_comet_engine.html">CometEngine</a> Builder' that module can UWP Win32 Build support</p>
+<p>The Comet Engine Modules: </p><pre class="fragment">CometEngineCommon
+  CometEngine.dll
+  CometEngineCollision.dll
+  CometEngineFiles.dll
+  CometEngineGeometry.dll
+  CometEngineNetwork.dll
+  CometEngineLibs.dll
+CometEngineClient
+  CometEngineDXRenderer.dll
+  CometEngineWin32.dll
+CometEngineServer
+  CometEngineDB.dll
+</pre><p>※__CometEngine Editor__ will add later.</p>
+<p>The <b>Common</b> is Common Modules Server and Client side</p>
+<p>The <b>Client</b> is Client Modules for Windows Client [ Win32 DeskTop, UWP]</p>
+<p>The <b>Server</b> is Server Modules for Server side. That can support GPGUP, DB, Multi-Core</p>
+<p>The Script Language is C# for Game Developer.</p>
+<p>Game Engine Layer implement C++ Language and Provide DLL</p>
+<h2>Design Of Librarys</h2>
+<p>•Provide Random Number Library. ex) Mersenne Twister, or external library</p>
+<p>•Compress Resources like zip file or Compile Resource. [Support Encryption]</p>
+<p>• Load to Editor and parsing data Well-Known File Format ex) PNG, JPEG, BMP and ETC</p>
+<p>• Probably Need Own Animation Method ( Rigging, Skeleton ) </p><pre class="fragment">- Probably Need Parsing Data from well-known utils ex) Blender.
+</pre><p>• Network Module support Serializer, and make sure send a bit data. </p><pre class="fragment"> - Do Not Use ".Net"and "C# Socket." Using C++ WinSock. and make sure Wrapping.
+</pre><p> • Make sure the Game Developer focus on High-Level. But The <a class="el" href="namespace_comet_engine.html">CometEngine</a> provide Low-Level System</p>
+<p>• Develop In-Game Profiler. For CPU,GPU, Memeory and Allocation Information Collect and Visualize</p>
+<p>• If I Need, module strcuture change to State Machine + Pipe Line </p><pre class="fragment">- ex) Animation Pipeline, Resource Processing PipeLine, etc..
+</pre><h2>Optimazation</h2>
+<p>Using SSE Operation and Hard-ware Acceleration </p><pre class="fragment">• __m128
+
+• Own Register
+
+• __declspec(align(16)) type []
+
+•  Read More MSDN 
+</pre><p>Memory Allocator Implementation and provide </p><pre class="fragment">• Using Engine Core Data-Structure ex) Render Command
+</pre><p>I Need More Research The Particle System. My Opinion is Particle make to State Machine and processing GPU Level.</p>
+<p>If I can, GPGPU Collision Detection</p>
+<p>Using OpenMP</p>
+<h2>License:</h2>
+<p>BSD License.</p>
+<p><br />
+ <br />
+ </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

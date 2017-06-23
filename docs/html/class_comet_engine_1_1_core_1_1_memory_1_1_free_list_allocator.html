@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('class_comet_engine_1_1_core_1_1_memory
 </div><!--header-->
 <div class="contents">
 
-<p>Free-Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìì´ë‹¤.  
+<p>Free-List¸¦ ±â¹İÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Ş¸ğ¸® ÇÒ´çÀÚÀÌ´Ù.  
  <a href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#details">ë” ìì„¸íˆ ...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a>&gt;</code></p>
@@ -123,13 +123,13 @@ FreeListAllocatorì— ëŒ€í•œ í˜‘ë ¥ ë‹¤ì´ì–´ê·¸ë¨:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public ë©¤ë²„ í•¨ìˆ˜</h2></td></tr>
 <tr class="memitem:ae13641cb77ff097ec23c1a6112b2e6c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#ae13641cb77ff097ec23c1a6112b2e6c6">FreeListAllocator</a> (void *i_MemoryBlock, <a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a> i_align, <a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> i_MemorySize, <a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> i_offset=0)</td></tr>
-<tr class="memdesc:ae13641cb77ff097ec23c1a6112b2e6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html" title="Free-Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìì´ë‹¤. ">FreeListAllocator</a> ìƒì„±ì.  <a href="#ae13641cb77ff097ec23c1a6112b2e6c6">ë” ìì„¸íˆ ...</a><br /></td></tr>
+<tr class="memdesc:ae13641cb77ff097ec23c1a6112b2e6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html" title="Free-List¸¦ ±â¹İÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Ş¸ğ¸® ÇÒ´çÀÚÀÌ´Ù. ">FreeListAllocator</a> »ı¼ºÀÚ.  <a href="#ae13641cb77ff097ec23c1a6112b2e6c6">ë” ìì„¸íˆ ...</a><br /></td></tr>
 <tr class="separator:ae13641cb77ff097ec23c1a6112b2e6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ff0a374ba86a2c447aaf05ad04e932"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a73ff0a374ba86a2c447aaf05ad04e932">alloc</a> (<a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> i_byte) override</td></tr>
-<tr class="memdesc:a73ff0a374ba86a2c447aaf05ad04e932"><td class="mdescLeft">&#160;</td><td class="mdescRight">i_byte ë§Œí¼ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•©ë‹ˆë‹¤.  <a href="#a73ff0a374ba86a2c447aaf05ad04e932">ë” ìì„¸íˆ ...</a><br /></td></tr>
+<tr class="memdesc:a73ff0a374ba86a2c447aaf05ad04e932"><td class="mdescLeft">&#160;</td><td class="mdescRight">i_byte ¸¸Å­ ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÕ´Ï´Ù.  <a href="#a73ff0a374ba86a2c447aaf05ad04e932">ë” ìì„¸íˆ ...</a><br /></td></tr>
 <tr class="separator:a73ff0a374ba86a2c447aaf05ad04e932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7a97e4b1500c7ef2c2edc3bec28a84f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#ab7a97e4b1500c7ef2c2edc3bec28a84f">dealloc</a> (void *i_Adress) override</td></tr>
-<tr class="memdesc:ab7a97e4b1500c7ef2c2edc3bec28a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">i_Adressê°€ ê°€ë¥´í‚¤ê³  ìˆëŠ” ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ í—¤ì œí•©ë‹ˆë‹¤.  <a href="#ab7a97e4b1500c7ef2c2edc3bec28a84f">ë” ìì„¸íˆ ...</a><br /></td></tr>
+<tr class="memdesc:ab7a97e4b1500c7ef2c2edc3bec28a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">i_Adress°¡ °¡¸£Å°°í ÀÖ´Â ¸Ş¸ğ¸®¸¦ ÇÒ´ç ÇìÁ¦ÇÕ´Ï´Ù.  <a href="#ab7a97e4b1500c7ef2c2edc3bec28a84f">ë” ìì„¸íˆ ...</a><br /></td></tr>
 <tr class="separator:ab7a97e4b1500c7ef2c2edc3bec28a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -153,8 +153,8 @@ Private ì†ì„±</h2></td></tr>
 <tr class="separator:a9e6f8b10d6e94738d154d9f7c72d2538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">ìƒì„¸í•œ ì„¤ëª…</h2>
-<div class="textblock"><p>Free-Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìì´ë‹¤. </p>
-<p>í• ë‹¹ëœ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ê°€ì§€ê³ , Free-Listë¥¼ êµ¬ì„±í•˜ì—¬, ìµœì´ˆ ì í•© ë©”ëª¨ë¦¬ í• ë‹¹ ìœ„ì¹˜ë¥¼ ì°¾ì•„ í• ë‹¹í•´ì£¼ëŠ” ì—­í• ì„ í•œë‹¤.</p>
+<div class="textblock"><p>Free-List¸¦ ±â¹İÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Ş¸ğ¸® ÇÒ´çÀÚÀÌ´Ù. </p>
+<p>ÇÒ´çµÈ ¸Ş¸ğ¸® ºí·ÏÀ» °¡Áö°í, Free-List¸¦ ±¸¼ºÇÏ¿©, ÃÖÃÊ ÀûÇÕ ¸Ş¸ğ¸® ÇÒ´ç À§Ä¡¸¦ Ã£¾Æ ÇÒ´çÇØÁÖ´Â ¿ªÇÒÀ» ÇÑ´Ù.</p>
 <dl class="section author"><dt>ì‘ì„±ì</dt><dd>Dev SDK, <a href="#" onclick="location.href='mai'+'lto:'+'k_s'+'dk'+'@na'+'ve'+'r.c'+'om'; return false;">k_sdk<span style="display: none;">.nosp@m.</span>@nav<span style="display: none;">.nosp@m.</span>er.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section date"><dt>ë‚ ì§œ</dt><dd>2017-06-23 </dd></dl>
 <dl class="section version"><dt>ë²„ì „</dt><dd>0.0.1 </dd></dl>
@@ -199,13 +199,13 @@ Private ì†ì„±</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html" title="Free-Listë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” ì»¤ìŠ¤í…€ ë©”ëª¨ë¦¬ í• ë‹¹ìì´ë‹¤. ">FreeListAllocator</a> ìƒì„±ì. </p>
+<p><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html" title="Free-List¸¦ ±â¹İÀ¸·Î ÇÏ´Â Ä¿½ºÅÒ ¸Ş¸ğ¸® ÇÒ´çÀÚÀÌ´Ù. ">FreeListAllocator</a> »ı¼ºÀÚ. </p>
 <dl class="params"><dt>ë§¤ê°œë³€ìˆ˜</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void*</td><td>i_MemoryBlock ìƒì„±í•œ ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ì…ë ¥ìœ¼ë¡œ ë°›ëŠ”ë‹¤. 16ë°”ì´íŠ¸ë³´ë‹¤ ì»¤ì•¼í•œë‹¤. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a></td><td>i_align ë©”ëª¨ë¦¬ ì •ë ¬ í¬ê¸° </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a></td><td>i_MemorySize ì‚¬ìš©í•  ë©”ëª¨ë¦¬ì˜ í¬ê¸°. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a></td><td>i_offset ë©”ëª¨ë¦¬ì˜ ì‹œì‘ ìœ„ì¹˜ë¥¼ ì•Œë¦¬ëŠ” offset default=0 </td></tr>
+    <tr><td class="paramname">void*</td><td>i_MemoryBlock »ı¼ºÇÑ ¸Ş¸ğ¸® ºí·ÏÀ» ÀÔ·ÂÀ¸·Î ¹Ş´Â´Ù. 16¹ÙÀÌÆ®º¸´Ù Ä¿¾ßÇÑ´Ù. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a></td><td>i_align ¸Ş¸ğ¸® Á¤·Ä Å©±â </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a></td><td>i_MemorySize »ç¿ëÇÒ ¸Ş¸ğ¸®ÀÇ Å©±â. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a></td><td>i_offset ¸Ş¸ğ¸®ÀÇ ½ÃÀÛ À§Ä¡¸¦ ¾Ë¸®´Â offset default=0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -245,19 +245,209 @@ Private ì†ì„±</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>i_byte ë§Œí¼ ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•©ë‹ˆë‹¤. </p>
+<p>i_byte ¸¸Å­ ¸Ş¸ğ¸®¸¦ ÇÒ´çÇÕ´Ï´Ù. </p>
 <dl class="params"><dt>ë§¤ê°œë³€ìˆ˜</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a></td><td>i_byte ë©”ëª¨ë¦¬ í• ë‹¹ í¬ê¸° </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a></td><td>i_byte ¸Ş¸ğ¸® ÇÒ´ç Å©±â </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>ë°˜í™˜ê°’</dt><dd>í• ë‹¹ëœ ë©”ëª¨ë¦¬ì˜ ì‹œì‘ ì£¼ì†Œë¥¼ ë°˜í™˜ </dd></dl>
+<dl class="section return"><dt>ë°˜í™˜ê°’</dt><dd>ÇÒ´çµÈ ¸Ş¸ğ¸®ÀÇ ½ÃÀÛ ÁÖ¼Ò¸¦ ¹İÈ¯ </dd></dl>
 
 <p><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a8f51b4daa12e31477f57003494c09098">BaseAllocator</a>ë¥¼ êµ¬í˜„.</p>
 
 <p class="definition"><a class="el" href="_comet_engine_memory_8cpp_source.html">CometEngineMemory.cpp</a> íŒŒì¼ì˜ <a class="el" href="_comet_engine_memory_8cpp_source.html#l00062">62</a> ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë‹¤.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//Iteration ì— í•„ìš”í•œ Nodeë¥¼ ëŒ€ì…</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    FreeBlockType* block = <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    FreeBlockType* preblock = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//ìµœì´ˆì í•© ìœ„ì¹˜ë¥¼ ì°¾ê¸°ìœ„í•œ ë£¨í”„.</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//First-Fit Find Allocation Position</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">while</span> (block != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">//ë°ì´í„° ì •ë ¬ì„ ìœ„í•œ ê³µê°„í¬ê¸°</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a> adjustment = <a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a57bbceefc56fa0e2ec1e472d85ce5e19">Utils::alignForwardHeader</a>(block, <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">m_Align</a>, <span class="keyword">sizeof</span>(MemoryHeader));</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> request_size = i_size + adjustment;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">//í• ë‹¹í•  ìˆ˜ ìˆëŠ” ë¸”ë¡ì„ ì°¾ëŠ”ë‹¤. (ìµœì´ˆì í•©)</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (block-&gt;Size &lt; request_size)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            preblock = block;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            block = block-&gt;Next;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//êµ¬ì¡°ì²´ê°€ Alignì„ ìœ ì§€í•˜ê³  ìˆëŠ”ì§€ ì²´í¬.</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        static_assert(<span class="keyword">sizeof</span>(MemoryHeader) &gt;= <span class="keyword">sizeof</span>(FreeBlockType), <span class="stringliteral">&quot;sizeof(AdjustmentHeader) &gt;= sizeof(FreeBlockType)&quot;</span>);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">//ìš”ì²­ ë¸”ë¡ í¬ê¸°ê°€, íƒ€ì´íŠ¸ í•˜ë©´</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (block-&gt;Size - request_size &lt;= <span class="keyword">sizeof</span>(MemoryHeader))</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">//ìš”ì²­í¬ê¸°ë¥¼ ë¸”ë¡ì˜ í¬ê¸°ë¡œ ì„¤ì •í•¨</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            request_size = block-&gt;Size;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (preblock != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                preblock-&gt;Next = block-&gt;Next;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a> = block-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#a85617a85510a3465dbae6a061308aef7">Next</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">//ì¶©ë¶„í•œ ê³µê°„ì´ ìˆë‹¤ë©´,</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            FreeBlockType* next = (FreeBlockType*)<a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a93ae170a43dac9da0116187242b35a6f">Utils::Add</a>(block, (<span class="keywordtype">void</span>*)request_size);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">//ë©”ëª¨ë¦¬ ë¸”ë¡ì„ ìë¥´ê³ </span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            next-&gt;Size = block-&gt;Size - request_size;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">//ì´ ë¸”ë¡ì„ ì œì™¸í•œ FreeListë¼ë¦¬ ì—°ê²°ì‹œí‚¨ë‹¤.</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            next-&gt;Next = block-&gt;Next;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span> (preblock != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                preblock-&gt;Next = next;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a> = next;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">//í•´ë”ë¥¼ ë„£ê³ , ì •ë ¬ëœ ì£¼ì†Œê°’ì„ ìœ ì§€í•˜ê¸°ìœ„í•œ adjustment ê°’ì„ ë„£ëŠ”ë‹¤.</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> adress = (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)block + adjustment;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">//í•´ë”ë¥¼ ë„£ìŒ</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        MemoryHeader* header = (MemoryHeader*)(adress - <span class="keyword">sizeof</span>(MemoryHeader));</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        header-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#ae6cf85bdf7b52a990d4428449e599c8e">Size</a> = request_size;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        header-&gt;Adjustment = adjustment;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">m_UsedMemory</a> += request_size;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">m_AllocCounter</a>++;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">CEAssert</a>(<a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#aa5a0140d498d631a747be87791063f2d">Utils::alignForwardAdjustment</a>((<span class="keywordtype">void</span>*)adress, <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">m_Align</a>) == 0);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)adress;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">CEAssert</a>(!<span class="stringliteral">&quot;Not eonugh memory block&quot;</span>);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div><div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_html_a9e6f8b10d6e94738d154d9f7c72d2538"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">CometEngine::Core::Memory::FreeListAllocator::m_FreeBlock</a></div><div class="ttdeci">FreeBlockType * m_FreeBlock</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00090">CometEngineMemory.h:90</a></div></div>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//Iteration ¿¡ ÇÊ¿äÇÑ Node¸¦ ´ëÀÔ    FreeBlockType* block = m_FreeBlock;
+    FreeBlockType* preblock = nullptr;
+
+    //ÃÖÃÊÀûÇÕ À§Ä¡¸¦ Ã£±âÀ§ÇÑ ·çÇÁ.
+    //First-Fit Find Allocation Position
+    while (block != nullptr)
+    {
+        //µ¥ÀÌÅÍ Á¤·ÄÀ» À§ÇÑ °ø°£Å©±â
+       Type::uint8 adjustment = Utils::alignForwardHeader(block, m_Align, sizeof(MemoryHeader));
+        Type::size_t request_size = i_size + adjustment;
+        
+        //ÇÒ´çÇÒ ¼ö ÀÖ´Â ºí·ÏÀ» Ã£´Â´Ù. (ÃÖÃÊÀûÇÕ)
+        if (block-&gt;Size &lt; request_size)
+        {
+            preblock = block;
+            block = block-&gt;Next;
+            continue;
+        }
+        
+        //±¸Á¶Ã¼°¡ AlignÀ» À¯ÁöÇÏ°í ÀÖ´ÂÁö Ã¼Å©.
+        static_assert(sizeof(MemoryHeader) &gt;= sizeof(FreeBlockType), &quot;sizeof(AdjustmentHeader) &gt;= sizeof(FreeBlockType)&quot;);
+
+
+        //¿äÃ» ºí·Ï Å©±â°¡, Å¸ÀÌÆ® ÇÏ¸é
+      if (block-&gt;Size - request_size &lt;= sizeof(MemoryHeader))
+        {
+            //¿äÃ»Å©±â¸¦ ºí·ÏÀÇ Å©±â·Î ¼³Á¤ÇÔ
+            request_size = block-&gt;Size;
+            if (preblock != nullptr)
+                preblock-&gt;Next = block-&gt;Next;
+            else
+                m_FreeBlock = block-&gt;Next;
+        }
+        else
+        {
+            //ÃæºĞÇÑ °ø°£ÀÌ ÀÖ´Ù¸é,
+            FreeBlockType* next = (FreeBlockType*)Utils::Add(block, (void*)request_size);
+            //¸Ş¸ğ¸® ºí·ÏÀ» ÀÚ¸£°í
+           next-&gt;Size = block-&gt;Size - request_size;
+            //ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.
+            next-&gt;Next = block-&gt;Next;
+
+            if (preblock != nullptr)
+                preblock-&gt;Next = next;
+            else
+                m_FreeBlock = next;
+        }
+        //ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.
+        Type::ptr adress = (Type::ptr)block + adjustment;
+        //ÇØ´õ¸¦ ³ÖÀ½
+        MemoryHeader* header = (MemoryHeader*)(adress - sizeof(MemoryHeader));
+        header-&gt;Size = request_size;
+        header-&gt;Adjustment = adjustment;
+        m_UsedMemory += request_size;
+        m_AllocCounter++;
+
+        CEAssert(Utils::alignForwardAdjustment((void*)adress, m_Align) == 0);
+
+        return (void*)adress;
+    }
+#ifdef _DEBUG
+    CEAssert(!&quot;Not eonugh memory block&quot;);
+#endif
+    return nullptr;
+}
+</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    FreeBlockType* block = <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    FreeBlockType* preblock = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//ÃÖÃÊÀûÇÕ À§Ä¡¸¦ Ã£±âÀ§ÇÑ ·çÇÁ.</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//First-Fit Find Allocation Position</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">while</span> (block != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">//µ¥ÀÌÅÍ Á¤·ÄÀ» À§ÇÑ °ø°£Å©±â        Type::uint8 adjustment = Utils::alignForwardHeader(block, m_Align, sizeof(MemoryHeader));
+        Type::size_t request_size = i_size + adjustment;
+        
+        //ÇÒ´çÇÒ ¼ö ÀÖ´Â ºí·ÏÀ» Ã£´Â´Ù. (ÃÖÃÊÀûÇÕ)
+        if (block-&gt;Size &lt; request_size)
+        {
+            preblock = block;
+            block = block-&gt;Next;
+            continue;
+        }
+        
+        //±¸Á¶Ã¼°¡ AlignÀ» À¯ÁöÇÏ°í ÀÖ´ÂÁö Ã¼Å©.
+        static_assert(sizeof(MemoryHeader) &gt;= sizeof(FreeBlockType), &quot;sizeof(AdjustmentHeader) &gt;= sizeof(FreeBlockType)&quot;);
+
+
+        //¿äÃ» ºí·Ï Å©±â°¡, Å¸ÀÌÆ® ÇÏ¸é
+      if (block-&gt;Size - request_size &lt;= sizeof(MemoryHeader))
+        {
+            //¿äÃ»Å©±â¸¦ ºí·ÏÀÇ Å©±â·Î ¼³Á¤ÇÔ
+            request_size = block-&gt;Size;
+            if (preblock != nullptr)
+                preblock-&gt;Next = block-&gt;Next;
+            else
+                m_FreeBlock = block-&gt;Next;
+        }
+        else
+        {
+            //ÃæºĞÇÑ °ø°£ÀÌ ÀÖ´Ù¸é,
+            FreeBlockType* next = (FreeBlockType*)Utils::Add(block, (void*)request_size);
+            //¸Ş¸ğ¸® ºí·ÏÀ» ÀÚ¸£°í
+           next-&gt;Size = block-&gt;Size - request_size;
+            //ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.
+            next-&gt;Next = block-&gt;Next;
+
+            if (preblock != nullptr)
+                preblock-&gt;Next = next;
+            else
+                m_FreeBlock = next;
+        }
+        //ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.
+        Type::ptr adress = (Type::ptr)block + adjustment;
+        //ÇØ´õ¸¦ ³ÖÀ½
+        MemoryHeader* header = (MemoryHeader*)(adress - sizeof(MemoryHeader));
+        header-&gt;Size = request_size;
+        header-&gt;Adjustment = adjustment;
+        m_UsedMemory += request_size;
+        m_AllocCounter++;
+
+        CEAssert(Utils::alignForwardAdjustment((void*)adress, m_Align) == 0);
+
+        return (void*)adress;
+    }
+#ifdef _DEBUG
+    CEAssert(!&quot;Not eonugh memory block&quot;);
+#endif
+    return nullptr;
+}
+</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a> adjustment = <a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a57bbceefc56fa0e2ec1e472d85ce5e19">Utils::alignForwardHeader</a>(block, <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">m_Align</a>, <span class="keyword">sizeof</span>(MemoryHeader));</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> request_size = i_size + adjustment;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">//ÇÒ´çÇÒ ¼ö ÀÖ´Â ºí·ÏÀ» Ã£´Â´Ù. (ÃÖÃÊÀûÇÕ)</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (block-&gt;Size &lt; request_size)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            preblock = block;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            block = block-&gt;Next;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//±¸Á¶Ã¼°¡ AlignÀ» À¯ÁöÇÏ°í ÀÖ´ÂÁö Ã¼Å©.</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        static_assert(<span class="keyword">sizeof</span>(MemoryHeader) &gt;= <span class="keyword">sizeof</span>(FreeBlockType), <span class="stringliteral">&quot;sizeof(AdjustmentHeader) &gt;= sizeof(FreeBlockType)&quot;</span>);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">//¿äÃ» ºí·Ï Å©±â°¡, Å¸ÀÌÆ® ÇÏ¸é       if (block-&gt;Size - request_size &lt;= sizeof(MemoryHeader))
+        {
+            //¿äÃ»Å©±â¸¦ ºí·ÏÀÇ Å©±â·Î ¼³Á¤ÇÔ
+            request_size = block-&gt;Size;
+            if (preblock != nullptr)
+                preblock-&gt;Next = block-&gt;Next;
+            else
+                m_FreeBlock = block-&gt;Next;
+        }
+        else
+        {
+            //ÃæºĞÇÑ °ø°£ÀÌ ÀÖ´Ù¸é,
+            FreeBlockType* next = (FreeBlockType*)Utils::Add(block, (void*)request_size);
+            //¸Ş¸ğ¸® ºí·ÏÀ» ÀÚ¸£°í
+           next-&gt;Size = block-&gt;Size - request_size;
+            //ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.
+            next-&gt;Next = block-&gt;Next;
+
+            if (preblock != nullptr)
+                preblock-&gt;Next = next;
+            else
+                m_FreeBlock = next;
+        }
+        //ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.
+        Type::ptr adress = (Type::ptr)block + adjustment;
+        //ÇØ´õ¸¦ ³ÖÀ½
+        MemoryHeader* header = (MemoryHeader*)(adress - sizeof(MemoryHeader));
+        header-&gt;Size = request_size;
+        header-&gt;Adjustment = adjustment;
+        m_UsedMemory += request_size;
+        m_AllocCounter++;
+
+        CEAssert(Utils::alignForwardAdjustment((void*)adress, m_Align) == 0);
+
+        return (void*)adress;
+    }
+#ifdef _DEBUG
+    CEAssert(!&quot;Not eonugh memory block&quot;);
+#endif
+    return nullptr;
+}
+</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (block-&gt;Size - request_size &lt;= <span class="keyword">sizeof</span>(MemoryHeader))</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">//¿äÃ»Å©±â¸¦ ºí·ÏÀÇ Å©±â·Î ¼³Á¤ÇÔ</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            request_size = block-&gt;Size;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (preblock != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                preblock-&gt;Next = block-&gt;Next;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a> = block-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#a85617a85510a3465dbae6a061308aef7">Next</a>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">//ÃæºĞÇÑ °ø°£ÀÌ ÀÖ´Ù¸é,</span></div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            FreeBlockType* next = (FreeBlockType*)<a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a93ae170a43dac9da0116187242b35a6f">Utils::Add</a>(block, (<span class="keywordtype">void</span>*)request_size);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">//¸Ş¸ğ¸® ºí·ÏÀ» ÀÚ¸£°í            next-&gt;Size = block-&gt;Size - request_size;
+            //ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.
+            next-&gt;Next = block-&gt;Next;
+
+            if (preblock != nullptr)
+                preblock-&gt;Next = next;
+            else
+                m_FreeBlock = next;
+        }
+        //ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.
+        Type::ptr adress = (Type::ptr)block + adjustment;
+        //ÇØ´õ¸¦ ³ÖÀ½
+        MemoryHeader* header = (MemoryHeader*)(adress - sizeof(MemoryHeader));
+        header-&gt;Size = request_size;
+        header-&gt;Adjustment = adjustment;
+        m_UsedMemory += request_size;
+        m_AllocCounter++;
+
+        CEAssert(Utils::alignForwardAdjustment((void*)adress, m_Align) == 0);
+
+        return (void*)adress;
+    }
+#ifdef _DEBUG
+    CEAssert(!&quot;Not eonugh memory block&quot;);
+#endif
+    return nullptr;
+}
+</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            next-&gt;Size = block-&gt;Size - request_size;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">//ÀÌ ºí·ÏÀ» Á¦¿ÜÇÑ FreeList³¢¸® ¿¬°á½ÃÅ²´Ù.</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            next-&gt;Next = block-&gt;Next;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">if</span> (preblock != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                preblock-&gt;Next = next;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a> = next;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">//ÇØ´õ¸¦ ³Ö°í, Á¤·ÄµÈ ÁÖ¼Ò°ªÀ» À¯ÁöÇÏ±âÀ§ÇÑ adjustment °ªÀ» ³Ö´Â´Ù.</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> adress = (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)block + adjustment;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">//ÇØ´õ¸¦ ³ÖÀ½</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        MemoryHeader* header = (MemoryHeader*)(adress - <span class="keyword">sizeof</span>(MemoryHeader));</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        header-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#ae6cf85bdf7b52a990d4428449e599c8e">Size</a> = request_size;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        header-&gt;Adjustment = adjustment;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">m_UsedMemory</a> += request_size;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">m_AllocCounter</a>++;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">CEAssert</a>(<a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#aa5a0140d498d631a747be87791063f2d">Utils::alignForwardAdjustment</a>((<span class="keywordtype">void</span>*)adress, <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">m_Align</a>) == 0);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">void</span>*)adress;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">CEAssert</a>(!<span class="stringliteral">&quot;Not eonugh memory block&quot;</span>);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div><div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_html_a9e6f8b10d6e94738d154d9f7c72d2538"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">CometEngine::Core::Memory::FreeListAllocator::m_FreeBlock</a></div><div class="ttdeci">FreeBlockType * m_FreeBlock</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00090">CometEngineMemory.h:90</a></div></div>
 <div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_abed7f06b465ee178701fe2cfc1aff9a6"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">CometEngine::Core::Memory::BaseAllocator::m_AllocCounter</a></div><div class="ttdeci">Type::size_t m_AllocCounter</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00056">CometEngineMemory.h:56</a></div></div>
 <div class="ttc" id="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_html_a93ae170a43dac9da0116187242b35a6f"><div class="ttname"><a href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a93ae170a43dac9da0116187242b35a6f">CometEngine::Core::Memory::Utils::Add</a></div><div class="ttdeci">const void * Add(const void *A, const void *B)</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8cpp_source.html#l00033">CometEngineMemory.cpp:33</a></div></div>
 <div class="ttc" id="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type_html_a85617a85510a3465dbae6a061308aef7"><div class="ttname"><a href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#a85617a85510a3465dbae6a061308aef7">CometEngine::Core::Memory::FreeListAllocator::FreeBlockType::Next</a></div><div class="ttdeci">FreeBlockType * Next</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00080">CometEngineMemory.h:80</a></div></div>
@@ -315,10 +505,10 @@ Private ì†ì„±</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>i_Adressê°€ ê°€ë¥´í‚¤ê³  ìˆëŠ” ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹ í—¤ì œí•©ë‹ˆë‹¤. </p>
+<p>i_Adress°¡ °¡¸£Å°°í ÀÖ´Â ¸Ş¸ğ¸®¸¦ ÇÒ´ç ÇìÁ¦ÇÕ´Ï´Ù. </p>
 <dl class="params"><dt>ë§¤ê°œë³€ìˆ˜</dt><dd>
   <table class="params">
-    <tr><td class="paramname">void*</td><td>i_Adress í• ë‹¹ í—¤ì œí•  ë©”ëª¨ë¦¬ ì£¼ì†Œ </td></tr>
+    <tr><td class="paramname">void*</td><td>i_Adress ÇÒ´ç ÇìÁ¦ÇÒ ¸Ş¸ğ¸® ÁÖ¼Ò </td></tr>
   </table>
   </dd>
 </dl>
@@ -326,7 +516,94 @@ Private ì†ì„±</h2></td></tr>
 <p><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#acca0d1592319cfecb53f8333033a644b">BaseAllocator</a>ë¥¼ êµ¬í˜„.</p>
 
 <p class="definition"><a class="el" href="_comet_engine_memory_8cpp_source.html">CometEngineMemory.cpp</a> íŒŒì¼ì˜ <a class="el" href="_comet_engine_memory_8cpp_source.html#l00131">131</a> ë²ˆì§¸ ë¼ì¸ì—ì„œ ì •ì˜ë˜ì—ˆìŠµë‹ˆë‹¤.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">CEAssert</a>(i_Adress != <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//í• ë‹¹í–ˆë˜ ë©”ëª¨ë¦¬ì—ì„œ í•´ë”ê°’ì„ ì¶”ì¶œ</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    MemoryHeader* header = (MemoryHeader*)<a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a4e360b8988f0de099daa987e3b5f09ed">Utils::Sub</a>(i_Adress, (<span class="keywordtype">void</span>*)<span class="keyword">sizeof</span>(MemoryHeader));</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">//ë©”ëª¨ë¦¬ ë¸”ëŸ­ì˜ ì‹œì‘ í¬ì¸í„°</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> block_begin = ((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)i_Adress) - header-&gt;Adjustment;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> block_size = header-&gt;Size;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//ë©”ëª¨ë¦¬ ë¸”ëŸ­ì˜ ë í¬ì¸í„°</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> block_end = block_begin + block_size;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//ì´ˆê¸°í™”ë¥¼ ëˆˆìœ¼ë¡œ í™•ì¸í•˜ê¸° ìœ„í•´ 0ìœ¼ë¡œ  ì´ˆê¸°í™”</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> i = (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)i_Adress; i != block_end; i++)</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        (*((<span class="keywordtype">char</span>*)i)) = 0;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    FreeBlockType* block = <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a>;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    FreeBlockType* preblock = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">while</span> (block != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">//ì •ë ¬ëœ ë¦¬ìŠ¤íŠ¸ë¥¼ ìœ ì§€í•˜ê¸° ìœ„í•œ ìœ„ì¹˜ íƒìƒ‰</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)block &gt;= block_end)</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        preblock = block;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        block = block-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#a85617a85510a3465dbae6a061308aef7">Next</a>;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> (preblock == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment">//ì´ì „ ë¸”ë¡ì´ ì—†ëŠ” ìƒíƒœë¼ë©´ </span></div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">//í˜„ì œ ë¸”ë¡ì„ ê¸°ì¡´ ë¸”ë¡ì˜ ë‹¤ìŒì„ ê°€ë¥´í‚¤ê²Œ í•œë’¤ ê¸°ì¡´ë¸”ë¡ì„ í˜„ì œë¸”ë¡ìœ¼ë¡œ ë°”ê¿ˆ.( ê·¸ëƒ¥ ë’¤ì—ë‘ê³  ì—°ê²°)</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        preblock = (FreeBlockType*)block_begin;</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        preblock-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#ae6cf85bdf7b52a990d4428449e599c8e">Size</a> = block_size;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        preblock-&gt;Next = <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a>;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a> = preblock;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>) preblock + preblock-&gt;Size == block_begin)</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">//ë‘ ë¸”ë¡ì´ ë°”ë¡œ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì—°ì†ì ìœ¼ë¡œ ìˆë‹¤ë©´, ë¸”ë¡ì˜ ì‚¬ì´ì¦ˆë¥¼ í‚¤ì›€.</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        preblock-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#ae6cf85bdf7b52a990d4428449e599c8e">Size</a> += block_size;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="comment">//ë¸”ë¡ ë…¸ë“œë¥¼ ë§Œë“¬</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        FreeBlockType* freeblock = (FreeBlockType*)block_begin;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        freeblock-&gt;Size = block_size;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="comment">//ë…¸ë“œ ì¤‘ê°„ì— ë¼ì›Œë„£ìŒ. preblock-&gt;freeblock-&gt; preblockì´ ê°€ë¥´í‚¤ëŠ” ë…¸ë“œ</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        freeblock-&gt;Next = preblock-&gt;Next;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        preblock-&gt;Next = freeblock;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        preblock = freeblock;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">//ì™¼ìª½ìœ¼ë¡œ ë…¸ë“œê°€ ì˜†ì— ìˆìœ¼ë©´, ë‘ ë…¸ë“œë¥¼ ì—°ê²°í•¨</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span> (block != <span class="keyword">nullptr</span> &amp;&amp; (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)block == block_end)</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        preblock-&gt;Size += block-&gt;Size;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        preblock-&gt;Next = block-&gt;Next;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">m_AllocCounter</a>--;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">m_UsedMemory</a> -= block_size;</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div><div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_html_a9e6f8b10d6e94738d154d9f7c72d2538"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">CometEngine::Core::Memory::FreeListAllocator::m_FreeBlock</a></div><div class="ttdeci">FreeBlockType * m_FreeBlock</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00090">CometEngineMemory.h:90</a></div></div>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">CEAssert</a>(i_Adress != <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//ÇÒ´çÇß´ø ¸Ş¸ğ¸®¿¡¼­ ÇØ´õ°ªÀ» ÃßÃâ</span></div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    MemoryHeader* header = (MemoryHeader*)<a class="code" href="namespace_comet_engine_1_1_core_1_1_memory_1_1_utils.html#a4e360b8988f0de099daa987e3b5f09ed">Utils::Sub</a>(i_Adress, (<span class="keywordtype">void</span>*)<span class="keyword">sizeof</span>(MemoryHeader));</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">//¸Ş¸ğ¸® ºí·°ÀÇ ½ÃÀÛ Æ÷ÀÎÅÍ</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> block_begin = ((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)i_Adress) - header-&gt;Adjustment;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> block_size = header-&gt;Size;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//¸Ş¸ğ¸® ºí·°ÀÇ ³¡ Æ÷ÀÎÅÍ</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> block_end = block_begin + block_size;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//ÃÊ±âÈ­¸¦ ´«À¸·Î È®ÀÎÇÏ±â À§ÇØ 0À¸·Î  ÃÊ±âÈ­</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a> i = (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)i_Adress; i != block_end; i++)</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        (*((<span class="keywordtype">char</span>*)i)) = 0;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    FreeBlockType* block = <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a>;</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    FreeBlockType* preblock = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">while</span> (block != <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">//Á¤·ÄµÈ ¸®½ºÆ®¸¦ À¯ÁöÇÏ±â À§ÇÑ À§Ä¡ Å½»ö         if ((Type::ptr)block &gt;= block_end)
+            break;
+        preblock = block;
+        block = block-&gt;Next;
+    }
+
+    if (preblock == nullptr)
+    {
+        //ÀÌÀü ºí·ÏÀÌ ¾ø´Â »óÅÂ¶ó¸é 
+        //ÇöÁ¦ ºí·ÏÀ» ±âÁ¸ ºí·ÏÀÇ ´ÙÀ½À» °¡¸£Å°°Ô ÇÑµÚ ±âÁ¸ºí·ÏÀ» ÇöÁ¦ºí·ÏÀ¸·Î ¹Ù²Ş.( ±×³É µÚ¿¡µÎ°í ¿¬°á)
+        preblock = (FreeBlockType*)block_begin;
+        preblock-&gt;Size = block_size;
+        preblock-&gt;Next = m_FreeBlock;
+        m_FreeBlock = preblock;
+    }
+    else if ((Type::ptr) preblock + preblock-&gt;Size == block_begin)
+    {
+        //µÎ ºí·ÏÀÌ ¹Ù·Î ¿À¸¥ÂÊÀ¸·Î ¿¬¼ÓÀûÀ¸·Î ÀÖ´Ù¸é, ºí·ÏÀÇ »çÀÌÁî¸¦ Å°¿ò.
+        preblock-&gt;Size += block_size;
+    }
+    else
+    {
+        //ºí·Ï ³ëµå¸¦ ¸¸µë
+      FreeBlockType* freeblock = (FreeBlockType*)block_begin;
+        freeblock-&gt;Size = block_size;
+        //³ëµå Áß°£¿¡ ³¢¿ö³ÖÀ½. preblock-&gt;freeblock-&gt; preblockÀÌ °¡¸£Å°´Â ³ëµå
+       freeblock-&gt;Next = preblock-&gt;Next;
+        preblock-&gt;Next = freeblock;
+        preblock = freeblock;
+    }
+
+    //¿ŞÂÊÀ¸·Î ³ëµå°¡ ¿·¿¡ ÀÖÀ¸¸é, µÎ ³ëµå¸¦ ¿¬°áÇÔ
+ if (block != nullptr &amp;&amp; (Type::ptr)block == block_end)
+    {
+        preblock-&gt;Size += block-&gt;Size;
+        preblock-&gt;Next = block-&gt;Next;
+    }
+
+    m_AllocCounter--;
+    m_UsedMemory -= block_size;
+
+}
+</span></div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)block &gt;= block_end)</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        preblock = block;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        block = block-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#a85617a85510a3465dbae6a061308aef7">Next</a>;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span> (preblock == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment">//ÀÌÀü ºí·ÏÀÌ ¾ø´Â »óÅÂ¶ó¸é </span></div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">//ÇöÁ¦ ºí·ÏÀ» ±âÁ¸ ºí·ÏÀÇ ´ÙÀ½À» °¡¸£Å°°Ô ÇÑµÚ ±âÁ¸ºí·ÏÀ» ÇöÁ¦ºí·ÏÀ¸·Î ¹Ù²Ş.( ±×³É µÚ¿¡µÎ°í ¿¬°á)</span></div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        preblock = (FreeBlockType*)block_begin;</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        preblock-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#ae6cf85bdf7b52a990d4428449e599c8e">Size</a> = block_size;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        preblock-&gt;Next = <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a>;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">m_FreeBlock</a> = preblock;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>) preblock + preblock-&gt;Size == block_begin)</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">//µÎ ºí·ÏÀÌ ¹Ù·Î ¿À¸¥ÂÊÀ¸·Î ¿¬¼ÓÀûÀ¸·Î ÀÖ´Ù¸é, ºí·ÏÀÇ »çÀÌÁî¸¦ Å°¿ò.</span></div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        preblock-&gt;<a class="code" href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#ae6cf85bdf7b52a990d4428449e599c8e">Size</a> += block_size;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="comment">//ºí·Ï ³ëµå¸¦ ¸¸µë       FreeBlockType* freeblock = (FreeBlockType*)block_begin;
+        freeblock-&gt;Size = block_size;
+        //³ëµå Áß°£¿¡ ³¢¿ö³ÖÀ½. preblock-&gt;freeblock-&gt; preblockÀÌ °¡¸£Å°´Â ³ëµå
+       freeblock-&gt;Next = preblock-&gt;Next;
+        preblock-&gt;Next = freeblock;
+        preblock = freeblock;
+    }
+
+    //¿ŞÂÊÀ¸·Î ³ëµå°¡ ¿·¿¡ ÀÖÀ¸¸é, µÎ ³ëµå¸¦ ¿¬°áÇÔ
+ if (block != nullptr &amp;&amp; (Type::ptr)block == block_end)
+    {
+        preblock-&gt;Size += block-&gt;Size;
+        preblock-&gt;Next = block-&gt;Next;
+    }
+
+    m_AllocCounter--;
+    m_UsedMemory -= block_size;
+
+}
+</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        FreeBlockType* freeblock = (FreeBlockType*)block_begin;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        freeblock-&gt;Size = block_size;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="comment">//³ëµå Áß°£¿¡ ³¢¿ö³ÖÀ½. preblock-&gt;freeblock-&gt; preblockÀÌ °¡¸£Å°´Â ³ëµå        freeblock-&gt;Next = preblock-&gt;Next;
+        preblock-&gt;Next = freeblock;
+        preblock = freeblock;
+    }
+
+    //¿ŞÂÊÀ¸·Î ³ëµå°¡ ¿·¿¡ ÀÖÀ¸¸é, µÎ ³ëµå¸¦ ¿¬°áÇÔ
+ if (block != nullptr &amp;&amp; (Type::ptr)block == block_end)
+    {
+        preblock-&gt;Size += block-&gt;Size;
+        preblock-&gt;Next = block-&gt;Next;
+    }
+
+    m_AllocCounter--;
+    m_UsedMemory -= block_size;
+
+}
+</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        freeblock-&gt;Next = preblock-&gt;Next;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        preblock-&gt;Next = freeblock;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        preblock = freeblock;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">//¿ŞÂÊÀ¸·Î ³ëµå°¡ ¿·¿¡ ÀÖÀ¸¸é, µÎ ³ëµå¸¦ ¿¬°áÇÔ  if (block != nullptr &amp;&amp; (Type::ptr)block == block_end)
+    {
+        preblock-&gt;Size += block-&gt;Size;
+        preblock-&gt;Next = block-&gt;Next;
+    }
+
+    m_AllocCounter--;
+    m_UsedMemory -= block_size;
+
+}
+</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span> (block != <span class="keyword">nullptr</span> &amp;&amp; (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)block == block_end)</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        preblock-&gt;Size += block-&gt;Size;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        preblock-&gt;Next = block-&gt;Next;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">m_AllocCounter</a>--;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">m_UsedMemory</a> -= block_size;</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div><div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_html_a9e6f8b10d6e94738d154d9f7c72d2538"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a9e6f8b10d6e94738d154d9f7c72d2538">CometEngine::Core::Memory::FreeListAllocator::m_FreeBlock</a></div><div class="ttdeci">FreeBlockType * m_FreeBlock</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00090">CometEngineMemory.h:90</a></div></div>
 <div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_abed7f06b465ee178701fe2cfc1aff9a6"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">CometEngine::Core::Memory::BaseAllocator::m_AllocCounter</a></div><div class="ttdeci">Type::size_t m_AllocCounter</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00056">CometEngineMemory.h:56</a></div></div>
 <div class="ttc" id="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type_html_a85617a85510a3465dbae6a061308aef7"><div class="ttname"><a href="struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type.html#a85617a85510a3465dbae6a061308aef7">CometEngine::Core::Memory::FreeListAllocator::FreeBlockType::Next</a></div><div class="ttdeci">FreeBlockType * Next</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00080">CometEngineMemory.h:80</a></div></div>
 <div class="ttc" id="namespace_comet_engine_1_1_type_html_aeb22ad46de677e9a50679dfebeb0e6f0"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">CometEngine::Type::ptr</a></div><div class="ttdeci">unsigned long ptr</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00018">CometEngineTypes.h:18</a></div></div>
