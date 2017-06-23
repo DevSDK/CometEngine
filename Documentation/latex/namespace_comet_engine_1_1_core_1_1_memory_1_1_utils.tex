@@ -1,0 +1,152 @@
+\hypertarget{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils}{}\section{Comet\+Engine\+:\+:Core\+:\+:Memory\+:\+:Utils 네임스페이스 참조}
+\label{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils}\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+const void $\ast$ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a893da9f083981a41e4ada733c3d0661f}{align\+Forward} (const void $\ast$i\+\_\+base\+\_\+adress, \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr} i\+\_\+alignment)
+\item 
+const \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_aa5a0140d498d631a747be87791063f2d}{align\+Forward\+Adjustment} (const void $\ast$i\+\_\+adress, \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr} i\+\_\+alignment)
+\item 
+const \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19}{align\+Forward\+Header} (const void $\ast$i\+\_\+adress, \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr} i\+\_\+alignment, \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} i\+\_\+\+Header\+Size)
+\item 
+const void $\ast$ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a93ae170a43dac9da0116187242b35a6f}{Add} (const void $\ast$A, const void $\ast$B)
+\item 
+const void $\ast$ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a4e360b8988f0de099daa987e3b5f09ed}{Sub} (const void $\ast$A, const void $\ast$B)
+\end{DoxyCompactItemize}
+
+
+\subsection{함수 문서화}
+\mbox{\Hypertarget{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a93ae170a43dac9da0116187242b35a6f}\label{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a93ae170a43dac9da0116187242b35a6f}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}!Add@{Add}}
+\index{Add@{Add}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily const void $\ast$ Add (\begin{DoxyParamCaption}\item[{const void $\ast$}]{A,  }\item[{const void $\ast$}]{B }\end{DoxyParamCaption})}
+
+
+
+Comet\+Engine\+Memory.\+cpp 파일의 33 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+34 \{
+35     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{void}*)((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})A + (\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})B);
+36 \}
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a93ae170a43dac9da0116187242b35a6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a893da9f083981a41e4ada733c3d0661f}\label{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a893da9f083981a41e4ada733c3d0661f}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}!align\+Forward@{align\+Forward}}
+\index{align\+Forward@{align\+Forward}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}}
+\subsubsection{\texorpdfstring{align\+Forward()}{alignForward()}}
+{\footnotesize\ttfamily const void $\ast$ align\+Forward (\begin{DoxyParamCaption}\item[{const void $\ast$}]{i\+\_\+base\+\_\+adress,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr}}]{i\+\_\+alignment }\end{DoxyParamCaption})}
+
+
+
+Comet\+Engine\+Memory.\+cpp 파일의 5 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+6 \{
+7     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{void}*)(((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})i\_base\_adress) + ((i\_alignment - 1) & (~(i\_alignment - 1))));
+8 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_aa5a0140d498d631a747be87791063f2d}\label{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_aa5a0140d498d631a747be87791063f2d}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}!align\+Forward\+Adjustment@{align\+Forward\+Adjustment}}
+\index{align\+Forward\+Adjustment@{align\+Forward\+Adjustment}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}}
+\subsubsection{\texorpdfstring{align\+Forward\+Adjustment()}{alignForwardAdjustment()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} align\+Forward\+Adjustment (\begin{DoxyParamCaption}\item[{const void $\ast$}]{i\+\_\+adress,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr}}]{i\+\_\+alignment }\end{DoxyParamCaption})}
+
+
+
+Comet\+Engine\+Memory.\+cpp 파일의 10 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+11 \{
+12     \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type::uint8} adjustment = i\_alignment - ((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})(i\_adress)) & ((
+      \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr}) i\_alignment - 1);
+13     \textcolor{keywordflow}{if} (i\_alignment == adjustment)
+14         \textcolor{keywordflow}{return} 0;
+15     \textcolor{keywordflow}{return} adjustment;
+16 \}
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_aa5a0140d498d631a747be87791063f2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19}\label{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}!align\+Forward\+Header@{align\+Forward\+Header}}
+\index{align\+Forward\+Header@{align\+Forward\+Header}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}}
+\subsubsection{\texorpdfstring{align\+Forward\+Header()}{alignForwardHeader()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} align\+Forward\+Header (\begin{DoxyParamCaption}\item[{const void $\ast$}]{i\+\_\+adress,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr}}]{i\+\_\+alignment,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32}}]{i\+\_\+\+Header\+Size }\end{DoxyParamCaption})}
+
+
+
+Comet\+Engine\+Memory.\+cpp 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+19 \{
+20     \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type::uint8} adjustment = \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_aa5a0140d498d631a747be87791063f2d}{alignForwardAdjustment}(i\_adress, i\_alignment)
+      ;
+21     \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type::uint8} need = i\_HeaderSize;
+22     \textcolor{keywordflow}{if} (adjustment < need)
+23     \{
+24         need -= adjustment;
+25         adjustment += i\_alignment* (need / i\_alignment);
+26         \textcolor{keywordflow}{if} (need % i\_alignment > 0)
+27             adjustment += i\_alignment;
+28         \textcolor{keywordflow}{return} adjustment;
+29     \}
+30 
+31 \}
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a4e360b8988f0de099daa987e3b5f09ed}\label{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a4e360b8988f0de099daa987e3b5f09ed}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}!Sub@{Sub}}
+\index{Sub@{Sub}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}}
+\subsubsection{\texorpdfstring{Sub()}{Sub()}}
+{\footnotesize\ttfamily const void $\ast$ Sub (\begin{DoxyParamCaption}\item[{const void $\ast$}]{A,  }\item[{const void $\ast$}]{B }\end{DoxyParamCaption})}
+
+
+
+Comet\+Engine\+Memory.\+cpp 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+39 \{
+40     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{void}*)((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})A - (\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})B);
+41 \}
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a4e360b8988f0de099daa987e3b5f09ed_icgraph}
+\end{center}
+\end{figure}

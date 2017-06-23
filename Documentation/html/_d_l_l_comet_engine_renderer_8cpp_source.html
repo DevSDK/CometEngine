@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CometEngine: CometEngineClient/CometEngineRenderer/DLLExport/DLLCometEngineRenderer.cpp 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CometEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_d_l_l_comet_engine_renderer_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DLLCometEngineRenderer.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_l_l_comet_engine_renderer_8cpp.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../Renderer/CometEngineDXRenderer.h&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_comet_engine_1_1_renderer.html">CometEngine::Renderer</a>;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_d_l_l_comet_engine_renderer_8cpp.html#a901222d6138bd4efc54d4eda8460c65b">    7</a></span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#a56c623259192e033c4afcd528a148b57">__declspec</a>(dllexport)  <span class="keywordtype">bool</span> __stdcall Init(<span class="keywordtype">int</span> i_RenderWidth, <span class="keywordtype">int</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#ab996e2b2e12adfc087c67cebde9194e6">i_RenderHeight</a>, <span class="keywordtype">int</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#a901222d6138bd4efc54d4eda8460c65b">i_RenderScale</a>, <span class="keywordtype">int</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#a7016fffcce13da83a94427468f9bf950">i_MSAAScale</a>, <span class="keywordtype">bool</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#aef2be053839ec77e7c50bd4f4997cef1">i_IsFullScreen</a>)</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_d_l_l_comet_engine_renderer_8cpp.html#aef2be053839ec77e7c50bd4f4997cef1">    8</a></span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a9894517531990b824a58e1f61c6d542e">CometEngineDXRenderer::GetInstance</a>()-&gt;<a class="code" href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a570783c0a51edd5394fdb16137ae37c1">Init</a>(i_RenderWidth, i_RenderHeight, i_RenderScale, i_RenderScale, i_IsFullScreen);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_d_l_l_comet_engine_renderer_8cpp.html#a56c623259192e033c4afcd528a148b57">   12</a></span>&#160; <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#a56c623259192e033c4afcd528a148b57">__declspec</a>(dllexport)  <span class="keywordtype">void</span> __stdcall Render(<span class="keywordtype">float</span> dt)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a9894517531990b824a58e1f61c6d542e">CometEngineDXRenderer::GetInstance</a>()-&gt;<a class="code" href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#ac6fa4f62b984d0d34e785bd960255d71">Render</a>(dt);</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <a class="code" href="_d_l_l_comet_engine_renderer_8cpp.html#a56c623259192e033c4afcd528a148b57">__declspec</a>(dllexport)  <span class="keywordtype">void</span> __stdcall EnableDebugDevice(<span class="keywordtype">bool</span> flag)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a9894517531990b824a58e1f61c6d542e">CometEngineDXRenderer::GetInstance</a>()-&gt;<a class="code" href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a0cec813dd654a43d162981c37b0cbf6e">EnableDebugDevice</a>(flag);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="_d_l_l_comet_engine_renderer_8cpp_html_aef2be053839ec77e7c50bd4f4997cef1"><div class="ttname"><a href="_d_l_l_comet_engine_renderer_8cpp.html#aef2be053839ec77e7c50bd4f4997cef1">i_IsFullScreen</a></div><div class="ttdeci">int int int bool i_IsFullScreen</div><div class="ttdef"><b>Definition:</b> <a href="_d_l_l_comet_engine_renderer_8cpp_source.html#l00008">DLLCometEngineRenderer.cpp:8</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer_html_ac6fa4f62b984d0d34e785bd960255d71"><div class="ttname"><a href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#ac6fa4f62b984d0d34e785bd960255d71">CometEngine::Renderer::CometEngineDXRenderer::Render</a></div><div class="ttdeci">void Render(float dt)</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_d_x_renderer_8cpp_source.html#l00127">CometEngineDXRenderer.cpp:127</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer_html_a9894517531990b824a58e1f61c6d542e"><div class="ttname"><a href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a9894517531990b824a58e1f61c6d542e">CometEngine::Renderer::CometEngineDXRenderer::GetInstance</a></div><div class="ttdeci">static CometEngineDXRenderer * GetInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_d_x_renderer_8cpp_source.html#l00011">CometEngineDXRenderer.cpp:11</a></div></div>
+<div class="ttc" id="_d_l_l_comet_engine_renderer_8cpp_html_a56c623259192e033c4afcd528a148b57"><div class="ttname"><a href="_d_l_l_comet_engine_renderer_8cpp.html#a56c623259192e033c4afcd528a148b57">__declspec</a></div><div class="ttdeci">__declspec(dllexport) bool __stdcall Init(int i_RenderWidth</div><div class="ttdef"><b>Definition:</b> <a href="_d_l_l_comet_engine_renderer_8cpp_source.html#l00012">DLLCometEngineRenderer.cpp:12</a></div></div>
+<div class="ttc" id="_d_l_l_comet_engine_renderer_8cpp_html_ab996e2b2e12adfc087c67cebde9194e6"><div class="ttname"><a href="_d_l_l_comet_engine_renderer_8cpp.html#ab996e2b2e12adfc087c67cebde9194e6">i_RenderHeight</a></div><div class="ttdeci">int i_RenderHeight</div><div class="ttdef"><b>Definition:</b> <a href="_d_l_l_comet_engine_renderer_8cpp_source.html#l00007">DLLCometEngineRenderer.cpp:7</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_renderer_html"><div class="ttname"><a href="namespace_comet_engine_1_1_renderer.html">CometEngine::Renderer</a></div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_d_x_renderer_8h_source.html#l00011">CometEngineDXRenderer.h:11</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer_html_a0cec813dd654a43d162981c37b0cbf6e"><div class="ttname"><a href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a0cec813dd654a43d162981c37b0cbf6e">CometEngine::Renderer::CometEngineDXRenderer::EnableDebugDevice</a></div><div class="ttdeci">void EnableDebugDevice(bool i_Flag)</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_d_x_renderer_8cpp_source.html#l00019">CometEngineDXRenderer.cpp:19</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer_html_a570783c0a51edd5394fdb16137ae37c1"><div class="ttname"><a href="class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer.html#a570783c0a51edd5394fdb16137ae37c1">CometEngine::Renderer::CometEngineDXRenderer::Init</a></div><div class="ttdeci">bool Init(int i_RenderWidth, int i_RenderHeight, int i_RenderScale, int i_MSAAScale, bool isFullScreen)</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_d_x_renderer_8cpp_source.html#l00024">CometEngineDXRenderer.cpp:24</a></div></div>
+<div class="ttc" id="_d_l_l_comet_engine_renderer_8cpp_html_a901222d6138bd4efc54d4eda8460c65b"><div class="ttname"><a href="_d_l_l_comet_engine_renderer_8cpp.html#a901222d6138bd4efc54d4eda8460c65b">i_RenderScale</a></div><div class="ttdeci">int int i_RenderScale</div><div class="ttdef"><b>Definition:</b> <a href="_d_l_l_comet_engine_renderer_8cpp_source.html#l00007">DLLCometEngineRenderer.cpp:7</a></div></div>
+<div class="ttc" id="_d_l_l_comet_engine_renderer_8cpp_html_a7016fffcce13da83a94427468f9bf950"><div class="ttname"><a href="_d_l_l_comet_engine_renderer_8cpp.html#a7016fffcce13da83a94427468f9bf950">i_MSAAScale</a></div><div class="ttdeci">int int int i_MSAAScale</div><div class="ttdef"><b>Definition:</b> <a href="_d_l_l_comet_engine_renderer_8cpp_source.html#l00007">DLLCometEngineRenderer.cpp:7</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f18cbc37fd06d896e748d2be81dd21a9.html">CometEngineClient</a></li><li class="navelem"><a class="el" href="dir_193e064f03d3e6141a76b400fc13cf50.html">CometEngineRenderer</a></li><li class="navelem"><a class="el" href="dir_5f359f88f56c0265ad320d85e25ffc05.html">DLLExport</a></li><li class="navelem"><a class="el" href="_d_l_l_comet_engine_renderer_8cpp.html">DLLCometEngineRenderer.cpp</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

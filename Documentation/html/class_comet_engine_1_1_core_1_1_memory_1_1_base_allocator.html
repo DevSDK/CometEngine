@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CometEngine: BaseAllocator 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CometEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pro-methods">Protected 멤버 함수</a> &#124;
+<a href="#pro-attribs">Protected 속성</a> &#124;
+<a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">BaseAllocator 클래스 참조<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a>&gt;</code></p>
+<div class="dynheader">
+BaseAllocator에 대한 상속 다이어그램 : </div>
+<div class="dyncontent">
+<div class="center"><img src="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator__inherit__graph.png" border="0" usemap="#_base_allocator_inherit__map" alt="Inheritance graph"/></div>
+<map name="_base_allocator_inherit__map" id="_base_allocator_inherit__map">
+<area shape="rect" id="node2" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html" title="Free&#45;List를 기반으로 하는 커스텀 메모리 할당자이다. " alt="" coords="5,233,145,340"/>
+</map>
+</div>
+<div class="dynheader">
+BaseAllocator에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator__coll__graph.png" border="0" usemap="#_base_allocator_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a8f51b4daa12e31477f57003494c09098"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a8f51b4daa12e31477f57003494c09098">alloc</a> (<a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> i_byte)=0</td></tr>
+<tr class="separator:a8f51b4daa12e31477f57003494c09098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca0d1592319cfecb53f8333033a644b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#acca0d1592319cfecb53f8333033a644b">dealloc</a> (void *i_Adress)=0</td></tr>
+<tr class="separator:acca0d1592319cfecb53f8333033a644b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 멤버 함수</h2></td></tr>
+<tr class="memitem:a389c24863a5abee333f325634c18bea3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a389c24863a5abee333f325634c18bea3">BaseAllocator</a> (void *i_MemoryBlock, <a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a> i_align, <a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> i_MemorySize, <a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> i_offset=0)</td></tr>
+<tr class="separator:a389c24863a5abee333f325634c18bea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 속성</h2></td></tr>
+<tr class="memitem:a24b4bdf45e7f4b6109b6d1cc455c6f26"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a24b4bdf45e7f4b6109b6d1cc455c6f26">m_MemoryBlock</a></td></tr>
+<tr class="separator:a24b4bdf45e7f4b6109b6d1cc455c6f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e2142fb28745ce9bc64de3a0ea1956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a71e2142fb28745ce9bc64de3a0ea1956">m_Offset</a></td></tr>
+<tr class="separator:a71e2142fb28745ce9bc64de3a0ea1956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed7f06b465ee178701fe2cfc1aff9a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">m_AllocCounter</a></td></tr>
+<tr class="separator:abed7f06b465ee178701fe2cfc1aff9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1420047b91508f9ab33c448e8371511c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">m_UsedMemory</a></td></tr>
+<tr class="separator:a1420047b91508f9ab33c448e8371511c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba9914681f05b98a55770daaf7d94be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abba9914681f05b98a55770daaf7d94be">m_TotalSize</a></td></tr>
+<tr class="separator:abba9914681f05b98a55770daaf7d94be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f973630e3c1ac98b9defda193793b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">m_Align</a></td></tr>
+<tr class="separator:a01f973630e3c1ac98b9defda193793b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock">
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00051">51</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a id="a389c24863a5abee333f325634c18bea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389c24863a5abee333f325634c18bea3">&#9670;&nbsp;</a></span>BaseAllocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html">BaseAllocator</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>i_MemoryBlock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a>&#160;</td>
+          <td class="paramname"><em>i_align</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td>
+          <td class="paramname"><em>i_MemorySize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td>
+          <td class="paramname"><em>i_offset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8cpp_source.html">CometEngineMemory.cpp</a> 파일의 <a class="el" href="_comet_engine_memory_8cpp_source.html#l00043">43</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a71e2142fb28745ce9bc64de3a0ea1956">m_Offset</a> = i_offset;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a24b4bdf45e7f4b6109b6d1cc455c6f26">m_MemoryBlock</a> = (<span class="keywordtype">void</span>*)((<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)i_MemoryBlock + (<a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">Type::ptr</a>)i_offset);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abba9914681f05b98a55770daaf7d94be">m_TotalSize</a> = i_MemorySize;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">m_Align</a> = i_align;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">m_AllocCounter</a> = 0;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">m_UsedMemory</a> = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_abed7f06b465ee178701fe2cfc1aff9a6"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abed7f06b465ee178701fe2cfc1aff9a6">CometEngine::Core::Memory::BaseAllocator::m_AllocCounter</a></div><div class="ttdeci">Type::size_t m_AllocCounter</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00056">CometEngineMemory.h:56</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_abba9914681f05b98a55770daaf7d94be"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#abba9914681f05b98a55770daaf7d94be">CometEngine::Core::Memory::BaseAllocator::m_TotalSize</a></div><div class="ttdeci">Type::size_t m_TotalSize</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00058">CometEngineMemory.h:58</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_a71e2142fb28745ce9bc64de3a0ea1956"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a71e2142fb28745ce9bc64de3a0ea1956">CometEngine::Core::Memory::BaseAllocator::m_Offset</a></div><div class="ttdeci">Type::size_t m_Offset</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00055">CometEngineMemory.h:55</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_a24b4bdf45e7f4b6109b6d1cc455c6f26"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a24b4bdf45e7f4b6109b6d1cc455c6f26">CometEngine::Core::Memory::BaseAllocator::m_MemoryBlock</a></div><div class="ttdeci">void * m_MemoryBlock</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00054">CometEngineMemory.h:54</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_aeb22ad46de677e9a50679dfebeb0e6f0"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">CometEngine::Type::ptr</a></div><div class="ttdeci">unsigned long ptr</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00018">CometEngineTypes.h:18</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_a1420047b91508f9ab33c448e8371511c"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a1420047b91508f9ab33c448e8371511c">CometEngine::Core::Memory::BaseAllocator::m_UsedMemory</a></div><div class="ttdeci">Type::size_t m_UsedMemory</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00057">CometEngineMemory.h:57</a></div></div>
+<div class="ttc" id="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_html_a01f973630e3c1ac98b9defda193793b8"><div class="ttname"><a href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html#a01f973630e3c1ac98b9defda193793b8">CometEngine::Core::Memory::BaseAllocator::m_Align</a></div><div class="ttdeci">Type::uint8 m_Align</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_memory_8h_source.html#l00059">CometEngineMemory.h:59</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a8f51b4daa12e31477f57003494c09098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f51b4daa12e31477f57003494c09098">&#9670;&nbsp;</a></span>alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a>&#160;</td>
+          <td class="paramname"><em>i_byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#a73ff0a374ba86a2c447aaf05ad04e932">FreeListAllocator</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<a id="acca0d1592319cfecb53f8333033a644b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca0d1592319cfecb53f8333033a644b">&#9670;&nbsp;</a></span>dealloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dealloc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>i_Adress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator.html#ab7a97e4b1500c7ef2c2edc3bec28a84f">FreeListAllocator</a>에서 구현되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이터 문서화</h2>
+<a id="a01f973630e3c1ac98b9defda193793b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f973630e3c1ac98b9defda193793b8">&#9670;&nbsp;</a></span>m_Align</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">Type::uint8</a> m_Align</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00059">59</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="abed7f06b465ee178701fe2cfc1aff9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed7f06b465ee178701fe2cfc1aff9a6">&#9670;&nbsp;</a></span>m_AllocCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> m_AllocCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00056">56</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a24b4bdf45e7f4b6109b6d1cc455c6f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b4bdf45e7f4b6109b6d1cc455c6f26">&#9670;&nbsp;</a></span>m_MemoryBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* m_MemoryBlock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00054">54</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a71e2142fb28745ce9bc64de3a0ea1956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e2142fb28745ce9bc64de3a0ea1956">&#9670;&nbsp;</a></span>m_Offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> m_Offset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00055">55</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="abba9914681f05b98a55770daaf7d94be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba9914681f05b98a55770daaf7d94be">&#9670;&nbsp;</a></span>m_TotalSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> m_TotalSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00058">58</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a id="a1420047b91508f9ab33c448e8371511c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1420047b91508f9ab33c448e8371511c">&#9670;&nbsp;</a></span>m_UsedMemory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">Type::size_t</a> m_UsedMemory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"><a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a> 파일의 <a class="el" href="_comet_engine_memory_8h_source.html#l00057">57</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.:<ul>
+<li>CometEngineCommon/CometEngine/CometEngine/Memory/<a class="el" href="_comet_engine_memory_8h_source.html">CometEngineMemory.h</a></li>
+<li>CometEngineCommon/CometEngine/CometEngine/Memory/<a class="el" href="_comet_engine_memory_8cpp_source.html">CometEngineMemory.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_comet_engine.html">CometEngine</a></li><li class="navelem"><a class="el" href="namespace_comet_engine_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_comet_engine_1_1_core_1_1_memory.html">Memory</a></li><li class="navelem"><a class="el" href="class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator.html">BaseAllocator</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

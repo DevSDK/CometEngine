@@ -1,0 +1,177 @@
+\hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator}{}\section{Base\+Allocator 클래스 참조}
+\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator}\index{Base\+Allocator@{Base\+Allocator}}
+
+
+{\ttfamily \#include $<$Comet\+Engine\+Memory.\+h$>$}
+
+
+
+Base\+Allocator에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Base\+Allocator에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual void $\ast$ \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a8f51b4daa12e31477f57003494c09098}{alloc} (\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} i\+\_\+byte)=0
+\item 
+virtual void \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_acca0d1592319cfecb53f8333033a644b}{dealloc} (void $\ast$i\+\_\+\+Adress)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a389c24863a5abee333f325634c18bea3}{Base\+Allocator} (void $\ast$i\+\_\+\+Memory\+Block, \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8} i\+\_\+align, \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} i\+\_\+\+Memory\+Size, \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} i\+\_\+offset=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a24b4bdf45e7f4b6109b6d1cc455c6f26}{m\+\_\+\+Memory\+Block}
+\item 
+\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a71e2142fb28745ce9bc64de3a0ea1956}{m\+\_\+\+Offset}
+\item 
+\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abed7f06b465ee178701fe2cfc1aff9a6}{m\+\_\+\+Alloc\+Counter}
+\item 
+\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a1420047b91508f9ab33c448e8371511c}{m\+\_\+\+Used\+Memory}
+\item 
+\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abba9914681f05b98a55770daaf7d94be}{m\+\_\+\+Total\+Size}
+\item 
+\hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8} \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a01f973630e3c1ac98b9defda193793b8}{m\+\_\+\+Align}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+
+
+Comet\+Engine\+Memory.\+h 파일의 51 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a389c24863a5abee333f325634c18bea3}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a389c24863a5abee333f325634c18bea3}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!Base\+Allocator@{Base\+Allocator}}
+\index{Base\+Allocator@{Base\+Allocator}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{Base\+Allocator()}{BaseAllocator()}}
+{\footnotesize\ttfamily \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator}{Base\+Allocator} (\begin{DoxyParamCaption}\item[{void $\ast$}]{i\+\_\+\+Memory\+Block,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8}}]{i\+\_\+align,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}}]{i\+\_\+\+Memory\+Size,  }\item[{\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}}]{i\+\_\+offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+cpp 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+44 \{
+45     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a71e2142fb28745ce9bc64de3a0ea1956}{m\_Offset} = i\_offset;
+46     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a24b4bdf45e7f4b6109b6d1cc455c6f26}{m\_MemoryBlock} = (\textcolor{keywordtype}{void}*)((\hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})i\_MemoryBlock + (
+      \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type::ptr})i\_offset);
+47     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abba9914681f05b98a55770daaf7d94be}{m\_TotalSize} = i\_MemorySize;
+48     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a01f973630e3c1ac98b9defda193793b8}{m\_Align} = i\_align;
+49     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abed7f06b465ee178701fe2cfc1aff9a6}{m\_AllocCounter} = 0;
+50     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a1420047b91508f9ab33c448e8371511c}{m\_UsedMemory} = 0;
+51 
+52 \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a8f51b4daa12e31477f57003494c09098}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a8f51b4daa12e31477f57003494c09098}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!alloc@{alloc}}
+\index{alloc@{alloc}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{alloc()}{alloc()}}
+{\footnotesize\ttfamily virtual void$\ast$ alloc (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t}}]{i\+\_\+byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_a73ff0a374ba86a2c447aaf05ad04e932}{Free\+List\+Allocator}에서 구현되었습니다.
+
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_acca0d1592319cfecb53f8333033a644b}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_acca0d1592319cfecb53f8333033a644b}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!dealloc@{dealloc}}
+\index{dealloc@{dealloc}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{dealloc()}{dealloc()}}
+{\footnotesize\ttfamily virtual void dealloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{i\+\_\+\+Adress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_ab7a97e4b1500c7ef2c2edc3bec28a84f}{Free\+List\+Allocator}에서 구현되었습니다.
+
+
+
+\subsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a01f973630e3c1ac98b9defda193793b8}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a01f973630e3c1ac98b9defda193793b8}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!m\+\_\+\+Align@{m\+\_\+\+Align}}
+\index{m\+\_\+\+Align@{m\+\_\+\+Align}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Align}{m\_Align}}
+{\footnotesize\ttfamily \hyperlink{namespace_comet_engine_1_1_type_a1b09856a6463f2bcc4bd8ff0e4e3ee0f}{Type\+::uint8} m\+\_\+\+Align\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+h 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abed7f06b465ee178701fe2cfc1aff9a6}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abed7f06b465ee178701fe2cfc1aff9a6}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!m\+\_\+\+Alloc\+Counter@{m\+\_\+\+Alloc\+Counter}}
+\index{m\+\_\+\+Alloc\+Counter@{m\+\_\+\+Alloc\+Counter}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Alloc\+Counter}{m\_AllocCounter}}
+{\footnotesize\ttfamily \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} m\+\_\+\+Alloc\+Counter\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+h 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a24b4bdf45e7f4b6109b6d1cc455c6f26}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a24b4bdf45e7f4b6109b6d1cc455c6f26}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!m\+\_\+\+Memory\+Block@{m\+\_\+\+Memory\+Block}}
+\index{m\+\_\+\+Memory\+Block@{m\+\_\+\+Memory\+Block}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Memory\+Block}{m\_MemoryBlock}}
+{\footnotesize\ttfamily void$\ast$ m\+\_\+\+Memory\+Block\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+h 파일의 54 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a71e2142fb28745ce9bc64de3a0ea1956}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a71e2142fb28745ce9bc64de3a0ea1956}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!m\+\_\+\+Offset@{m\+\_\+\+Offset}}
+\index{m\+\_\+\+Offset@{m\+\_\+\+Offset}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Offset}{m\_Offset}}
+{\footnotesize\ttfamily \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} m\+\_\+\+Offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+h 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abba9914681f05b98a55770daaf7d94be}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_abba9914681f05b98a55770daaf7d94be}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!m\+\_\+\+Total\+Size@{m\+\_\+\+Total\+Size}}
+\index{m\+\_\+\+Total\+Size@{m\+\_\+\+Total\+Size}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Total\+Size}{m\_TotalSize}}
+{\footnotesize\ttfamily \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} m\+\_\+\+Total\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+h 파일의 58 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a1420047b91508f9ab33c448e8371511c}\label{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator_a1420047b91508f9ab33c448e8371511c}} 
+\index{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}!m\+\_\+\+Used\+Memory@{m\+\_\+\+Used\+Memory}}
+\index{m\+\_\+\+Used\+Memory@{m\+\_\+\+Used\+Memory}!Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator@{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Base\+Allocator}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Used\+Memory}{m\_UsedMemory}}
+{\footnotesize\ttfamily \hyperlink{namespace_comet_engine_1_1_type_a7c94ea6f8948649f8d181ae55911eeaf}{Type\+::size\+\_\+t} m\+\_\+\+Used\+Memory\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Comet\+Engine\+Memory.\+h 파일의 57 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Comet\+Engine\+Common/\+Comet\+Engine/\+Comet\+Engine/\+Memory/\hyperlink{_comet_engine_memory_8h}{Comet\+Engine\+Memory.\+h}\item 
+Comet\+Engine\+Common/\+Comet\+Engine/\+Comet\+Engine/\+Memory/\hyperlink{_comet_engine_memory_8cpp}{Comet\+Engine\+Memory.\+cpp}\end{DoxyCompactItemize}

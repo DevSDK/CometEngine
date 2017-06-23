@@ -1,0 +1,7 @@
+<map id="CometEngineWin32" name="CometEngineWin32">
+<area shape="rect" id="node2" href="$class_comet_engine_1_1_comet_engine_win32.html#af96d04b2fa84467a5342e290690e40fb" title="GetInstance" alt="" coords="191,31,283,57"/>
+<area shape="rect" id="node3" href="$_d_l_l_comet_engine_win32_8cpp.html#a2879621abf424abe46badd790ed99724" title="__declspec" alt="" coords="338,5,426,32"/>
+<area shape="rect" id="node4" href="$class_comet_engine_1_1_comet_engine_win32.html#a69f7f5121282027943c96964bb85ef85" title="MessageProc" alt="" coords="331,56,433,83"/>
+<area shape="rect" id="node5" href="$class_comet_engine_1_1_comet_engine_win32.html#a9f5ac1f01164dfdb7f752e6b4f77e80a" title="InitializeClientWin32" alt="" coords="481,56,620,83"/>
+<area shape="rect" id="node6" href="$class_comet_engine_1_1_comet_engine_win32.html#a1663bd9ecefc952f3f74065a592ad663" title="Init" alt="" coords="668,56,707,83"/>
+</map>

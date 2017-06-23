@@ -1,0 +1,104 @@
+\hypertarget{_d_l_l_comet_engine_renderer_8cpp}{}\section{Comet\+Engine\+Client/\+Comet\+Engine\+Renderer/\+D\+L\+L\+Export/\+D\+L\+L\+Comet\+Engine\+Renderer.cpp 파일 참조}
+\label{_d_l_l_comet_engine_renderer_8cpp}\index{Comet\+Engine\+Client/\+Comet\+Engine\+Renderer/\+D\+L\+L\+Export/\+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{Comet\+Engine\+Client/\+Comet\+Engine\+Renderer/\+D\+L\+L\+Export/\+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Renderer/\+Comet\+Engine\+D\+X\+Renderer.\+h\char`\"{}}\newline
+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_l_l_comet_engine_renderer_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_d_l_l_comet_engine_renderer_8cpp_a56c623259192e033c4afcd528a148b57}{\+\_\+\+\_\+declspec} (dllexport) bool \+\_\+\+\_\+stdcall Init(int i\+\_\+\+Render\+Width
+\end{DoxyCompactItemize}
+\subsection*{변수}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_d_l_l_comet_engine_renderer_8cpp_ab996e2b2e12adfc087c67cebde9194e6}{i\+\_\+\+Render\+Height}
+\item 
+int int \hyperlink{_d_l_l_comet_engine_renderer_8cpp_a901222d6138bd4efc54d4eda8460c65b}{i\+\_\+\+Render\+Scale}
+\item 
+int int int \hyperlink{_d_l_l_comet_engine_renderer_8cpp_a7016fffcce13da83a94427468f9bf950}{i\+\_\+\+M\+S\+A\+A\+Scale}
+\item 
+int int int bool \hyperlink{_d_l_l_comet_engine_renderer_8cpp_aef2be053839ec77e7c50bd4f4997cef1}{i\+\_\+\+Is\+Full\+Screen}
+\end{DoxyCompactItemize}
+
+
+\subsection{함수 문서화}
+\mbox{\Hypertarget{_d_l_l_comet_engine_renderer_8cpp_a56c623259192e033c4afcd528a148b57}\label{_d_l_l_comet_engine_renderer_8cpp_a56c623259192e033c4afcd528a148b57}} 
+\index{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
+\index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+declspec()}{\_\_declspec()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+declspec (\begin{DoxyParamCaption}\item[{dllexport}]{ }\end{DoxyParamCaption})}
+
+
+
+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp 파일의 12 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+13 \{
+14     CometEngineDXRenderer::GetInstance()->Render(dt);
+15 \}
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_d_l_l_comet_engine_renderer_8cpp_a56c623259192e033c4afcd528a148b57_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{변수 문서화}
+\mbox{\Hypertarget{_d_l_l_comet_engine_renderer_8cpp_aef2be053839ec77e7c50bd4f4997cef1}\label{_d_l_l_comet_engine_renderer_8cpp_aef2be053839ec77e7c50bd4f4997cef1}} 
+\index{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}!i\+\_\+\+Is\+Full\+Screen@{i\+\_\+\+Is\+Full\+Screen}}
+\index{i\+\_\+\+Is\+Full\+Screen@{i\+\_\+\+Is\+Full\+Screen}!D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}}
+\subsubsection{\texorpdfstring{i\+\_\+\+Is\+Full\+Screen}{i\_IsFullScreen}}
+{\footnotesize\ttfamily int int int bool i\+\_\+\+Is\+Full\+Screen}
+
+{\bfseries 초기값\+:}
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{return} CometEngineDXRenderer::GetInstance()->Init(i\_RenderWidth, 
+      \hyperlink{_d_l_l_comet_engine_renderer_8cpp_ab996e2b2e12adfc087c67cebde9194e6}{i\_RenderHeight}, \hyperlink{_d_l_l_comet_engine_renderer_8cpp_a901222d6138bd4efc54d4eda8460c65b}{i\_RenderScale}, \hyperlink{_d_l_l_comet_engine_renderer_8cpp_a901222d6138bd4efc54d4eda8460c65b}{i\_RenderScale}, 
+      \hyperlink{_d_l_l_comet_engine_renderer_8cpp_aef2be053839ec77e7c50bd4f4997cef1}{i\_IsFullScreen})
+\end{DoxyCode}
+
+
+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp 파일의 8 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{_d_l_l_comet_engine_renderer_8cpp_a7016fffcce13da83a94427468f9bf950}\label{_d_l_l_comet_engine_renderer_8cpp_a7016fffcce13da83a94427468f9bf950}} 
+\index{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}!i\+\_\+\+M\+S\+A\+A\+Scale@{i\+\_\+\+M\+S\+A\+A\+Scale}}
+\index{i\+\_\+\+M\+S\+A\+A\+Scale@{i\+\_\+\+M\+S\+A\+A\+Scale}!D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}}
+\subsubsection{\texorpdfstring{i\+\_\+\+M\+S\+A\+A\+Scale}{i\_MSAAScale}}
+{\footnotesize\ttfamily int int int i\+\_\+\+M\+S\+A\+A\+Scale}
+
+
+
+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp 파일의 7 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{_d_l_l_comet_engine_renderer_8cpp_ab996e2b2e12adfc087c67cebde9194e6}\label{_d_l_l_comet_engine_renderer_8cpp_ab996e2b2e12adfc087c67cebde9194e6}} 
+\index{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}!i\+\_\+\+Render\+Height@{i\+\_\+\+Render\+Height}}
+\index{i\+\_\+\+Render\+Height@{i\+\_\+\+Render\+Height}!D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}}
+\subsubsection{\texorpdfstring{i\+\_\+\+Render\+Height}{i\_RenderHeight}}
+{\footnotesize\ttfamily int i\+\_\+\+Render\+Height}
+
+
+
+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp 파일의 7 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{_d_l_l_comet_engine_renderer_8cpp_a901222d6138bd4efc54d4eda8460c65b}\label{_d_l_l_comet_engine_renderer_8cpp_a901222d6138bd4efc54d4eda8460c65b}} 
+\index{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}!i\+\_\+\+Render\+Scale@{i\+\_\+\+Render\+Scale}}
+\index{i\+\_\+\+Render\+Scale@{i\+\_\+\+Render\+Scale}!D\+L\+L\+Comet\+Engine\+Renderer.\+cpp@{D\+L\+L\+Comet\+Engine\+Renderer.\+cpp}}
+\subsubsection{\texorpdfstring{i\+\_\+\+Render\+Scale}{i\_RenderScale}}
+{\footnotesize\ttfamily int int i\+\_\+\+Render\+Scale}
+
+
+
+D\+L\+L\+Comet\+Engine\+Renderer.\+cpp 파일의 7 번째 라인에서 정의되었습니다.
+

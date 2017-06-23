@@ -11,7 +11,7 @@ namespace CometEngineTester
         static void Main(string[] args)
         {
             CometEngineClient.Init("TITLE", 1200, 600, WIndowModes.DEFAULT, 1, 1);
-        
+            
 
             // TODO: Init Renderer 
 

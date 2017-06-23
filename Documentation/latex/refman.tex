@@ -1,0 +1,211 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage{hfont}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize 다음에 의해 생성됨 \+:  Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize 다음에 의해 생성됨 \+:  Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Comet\+Engine \\[1ex]\large 0.\+0.\+1 }\\
+\vspace*{1cm}
+{\large 다음에 의해 생성됨 \+:  Doxygen 1.8.13}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Comet\+Engine}
+\label{md__r_e_a_d_m_e}
+\Hypertarget{md__r_e_a_d_m_e}
+\input{md__r_e_a_d_m_e}
+\chapter{네임스페이스 색인}
+\input{namespaces}
+\chapter{계통도 색인}
+\input{hierarchy}
+\chapter{클래스 색인}
+\input{annotated}
+\chapter{파일 색인}
+\input{files}
+\chapter{네임스페이스 문서화}
+\input{namespace_comet_engine}
+\input{namespace_comet_engine_1_1_client}
+\input{namespace_comet_engine_1_1_core}
+\input{namespace_comet_engine_1_1_core_1_1_memory}
+\input{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils}
+\input{namespace_comet_engine_1_1_renderer}
+\input{namespace_comet_engine_1_1_type}
+\input{namespace_comet_engine_tester}
+\chapter{클래스 문서화}
+\input{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator}
+\input{class_comet_engine_1_1_client_1_1_comet_engine_client}
+\input{class_comet_engine_1_1_client_1_1_comet_engine_client_win32}
+\input{class_comet_engine_1_1_client_1_1_comet_engine_d_x_renderer}
+\input{class_comet_engine_1_1_renderer_1_1_comet_engine_d_x_renderer}
+\input{class_comet_engine_1_1_comet_engine_win32}
+\input{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type}
+\input{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}
+\input{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_memory_header}
+\input{class_comet_engine_tester_1_1_program}
+\chapter{파일 문서화}
+\input{_d_l_l_comet_engine_renderer_8cpp}
+\input{_comet_engine_d_x_renderer_8cpp}
+\input{_comet_engine_d_x_renderer_8h}
+\input{_d_l_l_comet_engine_win32_8cpp}
+\input{_comet_engine_win32_8cpp}
+\input{_comet_engine_win32_8h}
+\input{_comet_engine_client_8cs}
+\input{_comet_engine_client_win32_8cs}
+\input{_comet_engine_d_x_renderer_8cs}
+\input{_comet_engine_client_2_i_comet_engine_client_2obj_2_debug_2_temporary_generated_file__036_c0_b5_1b21b61018a2eb197fd6190a62437244}
+\input{_comet_engine_tester_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_comet_engine_client_2_i_comet_engine_client_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_comet_engine_tester_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_comet_engine_client_2_i_comet_engine_client_2obj_2_debug_2_temporary_generated_file___e7_a71_f7a5f7b3234ee6ee37d19221788c2793bc}
+\input{_comet_engine_tester_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_comet_engine_client_2_i_comet_engine_client_2_properties_2_assembly_info_8cs}
+\input{_comet_engine_tester_2_properties_2_assembly_info_8cs}
+\input{_win32_enums_8cs}
+\input{_comet_engine_types_8h}
+\input{_comet_engine_memory_8cpp}
+\input{_comet_engine_memory_8h}
+\input{_main_8cpp}
+\input{_program_8cs}
+\input{_r_e_a_d_m_e_8md}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{색인}
+\printindex
+
+\end{document}

@@ -1,0 +1,65 @@
+\hypertarget{_main_8cpp}{}\section{Comet\+Engine\+Common/\+Comet\+Engine/\+Memory\+Tester/\+Main.cpp 파일 참조}
+\label{_main_8cpp}\index{Comet\+Engine\+Common/\+Comet\+Engine/\+Memory\+Tester/\+Main.\+cpp@{Comet\+Engine\+Common/\+Comet\+Engine/\+Memory\+Tester/\+Main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Comet\+Engine/\+Memory/\+Comet\+Engine\+Memory.\+h\char`\"{}}\newline
+Main.\+cpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{_main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{함수 문서화}
+\mbox{\Hypertarget{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Main.\+cpp@{Main.\+cpp}!main@{main}}
+\index{main@{main}!Main.\+cpp@{Main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main.\+cpp 파일의 8 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+9 \{
+10     \textcolor{keywordtype}{char}* MemoryBlock = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[1024 * 1024 * 10];
+11     \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Memory::FreeListAllocator} allocator = 
+      \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Memory::FreeListAllocator}(MemoryBlock, 4, 1024 * 1024);
+12     
+13     \textcolor{keywordtype}{int}* ptarr[10];
+14     
+15     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 10; i++)
+16     \{
+17         ptarr[i] = (\textcolor{keywordtype}{int}*)allocator.\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_a73ff0a374ba86a2c447aaf05ad04e932}{alloc}(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}) * 10);
+18 
+19     \}
+20 
+21     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 10; i++)
+22     \{
+23         \textcolor{keywordflow}{if} (i & 1)
+24             allocator.\hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_ab7a97e4b1500c7ef2c2edc3bec28a84f}{dealloc}(ptarr[i]);
+25     \}
+26 
+27 
+28 
+29     getchar();
+30     \textcolor{keyword}{delete} MemoryBlock;
+31 
+32 \}
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}

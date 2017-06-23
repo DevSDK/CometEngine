@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CometEngine: CometEngineCommon/CometEngine/CometEngine/Definition/CometEngineTypes.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CometEngine
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_comet_engine_types_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CometEngineTypes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_comet_engine_types_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __COMETENGINE_TYPES_H__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __COMETENGINE_TYPES_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vcruntime.h&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_comet_engine_types_8h.html#a9ade07b7881f4aeffa184676c123b87c">    5</a></span>&#160;<span class="preprocessor">#define CEAssert(expression)  assert(expression)</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_comet_engine.html">CometEngine</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html">    8</a></span>&#160;    <span class="keyword">namespace </span>Type</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #ifdef _WIN64 </span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">ptr</a>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int64 <a class="code" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    #else </span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">   17</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">size_t</a>;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">   18</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">ptr</a>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #endif</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#aaf44e46c719bc25ff3de1341e7aa4094">   21</a></span>&#160;        <span class="keyword">typedef</span> __int8 <a class="code" href="namespace_comet_engine_1_1_type.html#aaf44e46c719bc25ff3de1341e7aa4094">int8</a>;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#ad3ce9f24199b79b2629169eebf59489b">   22</a></span>&#160;        <span class="keyword">typedef</span> __int32 <a class="code" href="namespace_comet_engine_1_1_type.html#ad3ce9f24199b79b2629169eebf59489b">int32</a>;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#a92a47ab0e245f0ae4d01c38a64b6c427">   23</a></span>&#160;        <span class="keyword">typedef</span> __int64 <a class="code" href="namespace_comet_engine_1_1_type.html#a92a47ab0e245f0ae4d01c38a64b6c427">int64</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">   25</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int8 <a class="code" href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">uint8</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#ada4c95a4173a4bb540c8a7f80f3665d2">   26</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int32 <a class="code" href="namespace_comet_engine_1_1_type.html#ada4c95a4173a4bb540c8a7f80f3665d2">uint32</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#a91ad9478d81a7aaf2593e8d9c3d06a14">   27</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespace_comet_engine_1_1_type.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespace_comet_engine_1_1_type.html#ac6afe794ed283c11fb63426a58188e5e">   28</a></span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int64 <a class="code" href="namespace_comet_engine_1_1_type.html#ac6afe794ed283c11fb63426a58188e5e">uint64</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="namespace_comet_engine_1_1_type_html_a92a47ab0e245f0ae4d01c38a64b6c427"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#a92a47ab0e245f0ae4d01c38a64b6c427">CometEngine::Type::int64</a></div><div class="ttdeci">__int64 int64</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00023">CometEngineTypes.h:23</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_aaf44e46c719bc25ff3de1341e7aa4094"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#aaf44e46c719bc25ff3de1341e7aa4094">CometEngine::Type::int8</a></div><div class="ttdeci">__int8 int8</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00021">CometEngineTypes.h:21</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#a91ad9478d81a7aaf2593e8d9c3d06a14">CometEngine::Type::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00027">CometEngineTypes.h:27</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_ada4c95a4173a4bb540c8a7f80f3665d2"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#ada4c95a4173a4bb540c8a7f80f3665d2">CometEngine::Type::uint32</a></div><div class="ttdeci">unsigned __int32 uint32</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00026">CometEngineTypes.h:26</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_ad3ce9f24199b79b2629169eebf59489b"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#ad3ce9f24199b79b2629169eebf59489b">CometEngine::Type::int32</a></div><div class="ttdeci">__int32 int32</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00022">CometEngineTypes.h:22</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_aeb22ad46de677e9a50679dfebeb0e6f0"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#aeb22ad46de677e9a50679dfebeb0e6f0">CometEngine::Type::ptr</a></div><div class="ttdeci">unsigned long ptr</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00018">CometEngineTypes.h:18</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_a1b09856a6463f2bcc4bd8ff0e4e3ee0f"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#a1b09856a6463f2bcc4bd8ff0e4e3ee0f">CometEngine::Type::uint8</a></div><div class="ttdeci">unsigned __int8 uint8</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00025">CometEngineTypes.h:25</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_a7c94ea6f8948649f8d181ae55911eeaf"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#a7c94ea6f8948649f8d181ae55911eeaf">CometEngine::Type::size_t</a></div><div class="ttdeci">unsigned int size_t</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00017">CometEngineTypes.h:17</a></div></div>
+<div class="ttc" id="namespace_comet_engine_1_1_type_html_ac6afe794ed283c11fb63426a58188e5e"><div class="ttname"><a href="namespace_comet_engine_1_1_type.html#ac6afe794ed283c11fb63426a58188e5e">CometEngine::Type::uint64</a></div><div class="ttdeci">unsigned __int64 uint64</div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_types_8h_source.html#l00028">CometEngineTypes.h:28</a></div></div>
+<div class="ttc" id="namespace_comet_engine_html"><div class="ttname"><a href="namespace_comet_engine.html">CometEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="_comet_engine_d_x_renderer_8h_source.html#l00009">CometEngineDXRenderer.h:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f21333918530cc8b5b1c5fff199a0b2b.html">CometEngineCommon</a></li><li class="navelem"><a class="el" href="dir_6dfb13f198f4fa0b0bdd21be052c96b4.html">CometEngine</a></li><li class="navelem"><a class="el" href="dir_9d709f7ba5b3e899c33cb24109ac4677.html">CometEngine</a></li><li class="navelem"><a class="el" href="dir_46e5d8e12a06a1430cdf8f8de66e4ac2.html">Definition</a></li><li class="navelem"><a class="el" href="_comet_engine_types_8h.html">CometEngineTypes.h</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

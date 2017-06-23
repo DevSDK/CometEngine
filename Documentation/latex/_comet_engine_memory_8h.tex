@@ -1,0 +1,53 @@
+\hypertarget{_comet_engine_memory_8h}{}\section{Comet\+Engine\+Common/\+Comet\+Engine/\+Comet\+Engine/\+Memory/\+Comet\+Engine\+Memory.h 파일 참조}
+\label{_comet_engine_memory_8h}\index{Comet\+Engine\+Common/\+Comet\+Engine/\+Comet\+Engine/\+Memory/\+Comet\+Engine\+Memory.\+h@{Comet\+Engine\+Common/\+Comet\+Engine/\+Comet\+Engine/\+Memory/\+Comet\+Engine\+Memory.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Definition/\+Comet\+Engine\+Types.\+h\char`\"{}}\newline
+Comet\+Engine\+Memory.\+h에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_comet_engine_memory_8h__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_comet_engine_memory_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_base_allocator}{Base\+Allocator}
+\item 
+class \hyperlink{class_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator}{Free\+List\+Allocator}
+\begin{DoxyCompactList}\small\item\em Free-\/\+List를 기반으로 하는 커스텀 메모리 할당자이다. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_free_block_type}{Free\+List\+Allocator\+::\+Free\+Block\+Type}
+\item 
+struct \hyperlink{struct_comet_engine_1_1_core_1_1_memory_1_1_free_list_allocator_1_1_memory_header}{Free\+List\+Allocator\+::\+Memory\+Header}
+\end{DoxyCompactItemize}
+\subsection*{네임스페이스}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_comet_engine}{Comet\+Engine}
+\item 
+ \hyperlink{namespace_comet_engine_1_1_core}{Comet\+Engine\+::\+Core}
+\item 
+ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory}{Comet\+Engine\+::\+Core\+::\+Memory}
+\item 
+ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils}{Comet\+Engine\+::\+Core\+::\+Memory\+::\+Utils}
+\end{DoxyCompactItemize}
+\subsection*{함수}
+\begin{DoxyCompactItemize}
+\item 
+const void $\ast$ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a893da9f083981a41e4ada733c3d0661f}{align\+Forward} (const void $\ast$i\+\_\+base\+\_\+adress, \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr} i\+\_\+alignment)
+\item 
+const \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_aa5a0140d498d631a747be87791063f2d}{align\+Forward\+Adjustment} (const void $\ast$i\+\_\+adress, \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr} i\+\_\+alignment)
+\item 
+const \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a57bbceefc56fa0e2ec1e472d85ce5e19}{align\+Forward\+Header} (const void $\ast$i\+\_\+adress, \hyperlink{namespace_comet_engine_1_1_type_aeb22ad46de677e9a50679dfebeb0e6f0}{Type\+::ptr} i\+\_\+alignment, \hyperlink{namespace_comet_engine_1_1_type_ada4c95a4173a4bb540c8a7f80f3665d2}{Type\+::uint32} i\+\_\+\+Header\+Size)
+\item 
+const void $\ast$ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a93ae170a43dac9da0116187242b35a6f}{Add} (const void $\ast$A, const void $\ast$B)
+\item 
+const void $\ast$ \hyperlink{namespace_comet_engine_1_1_core_1_1_memory_1_1_utils_a4e360b8988f0de099daa987e3b5f09ed}{Sub} (const void $\ast$A, const void $\ast$B)
+\end{DoxyCompactItemize}
