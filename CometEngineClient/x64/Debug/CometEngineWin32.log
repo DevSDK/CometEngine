@@ -3,5 +3,6 @@ d:\projects\git\cometengine\cometengine\cometengineclient\cometenginewin32\win32
   d:\projects\git\cometengine\cometengine\cometengineclient\cometenginewin32\win32\cometenginewin32.cpp(1): note: 명령줄 인수: 'UNICODE'의 이전 정의를 참조하십시오.
   DLLCometEngineWin32.cpp
   코드를 생성하고 있습니다...
+     D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineWin32.lib 라이브러리 및 D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineWin32.exp 개체를 생성하고 있습니다.
   CometEngineWin32.vcxproj -> D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineWin32.dll
   CometEngineWin32.vcxproj -> D:\Projects\Git\CometEngine\CometEngine\x64\Debug\CometEngineWin32.pdb (Partial PDB)

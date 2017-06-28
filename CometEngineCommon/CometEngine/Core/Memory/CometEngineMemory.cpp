@@ -9,7 +9,7 @@ const void * CometEngine::Core::Memory::Utils::alignForward(const void * i_base_
 
 const Type::uint32 CometEngine::Core::Memory::Utils::alignForwardAdjustment(const void * i_adress, Type::ptr i_alignment)
 {
-	Type::uint8 adjustment = i_alignment - ((Type::ptr)(i_adress)) & ((Type::ptr) i_alignment - 1);
+	Type::uint8 adjustment = static_cast<Type::uint8>(i_alignment - ((Type::ptr)(i_adress)) & ((Type::ptr) i_alignment - 1));
 	if (i_alignment == adjustment)
 		return 0;
 	return adjustment;
@@ -22,11 +22,11 @@ const Type::uint32 CometEngine::Core::Memory::Utils::alignForwardHeader(const vo
 	if (adjustment < need)
 	{
 		need -= adjustment;
-		adjustment += i_alignment* (need / i_alignment);
+		adjustment += static_cast<Type::uint8> (i_alignment* (need / i_alignment));
 		if (need % i_alignment > 0)
-			adjustment += i_alignment;
-		return adjustment;
+			adjustment += static_cast<Type::uint8>( i_alignment);
 	}
+		return adjustment;
 
 }
 

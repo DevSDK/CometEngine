@@ -19,12 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CometEngine\Definition\CometEngineTypes.h" />
-    <ClInclude Include="CometEngine\Memory\CometEngineMemory.h" />
+    <ClCompile Include="Core\Container\CometEngineContainer.cpp" />
+    <ClCompile Include="Core\Memory\CometEngineMemory.cpp" />
+    <ClCompile Include="MemoryTester\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CometEngine\Memory\CometEngineMemory.cpp" />
-    <ClCompile Include="MemoryTester\Main.cpp" />
+    <ClInclude Include="Core\Container\CometEngineContainer.h" />
+    <ClInclude Include="Core\Container\Memory\IContainerMemory.h" />
+    <ClInclude Include="Core\Definition\CometEngineTypes.h" />
+    <ClInclude Include="Core\Memory\CometEngineMemory.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

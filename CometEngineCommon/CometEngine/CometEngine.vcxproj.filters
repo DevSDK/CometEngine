@@ -7,27 +7,45 @@
     <Filter Include="Debug">
       <UniqueIdentifier>{90c03841-750f-41eb-940b-5608212f769c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Memory">
-      <UniqueIdentifier>{a8fd3063-299c-4e26-bc9e-5eaef52cd87b}</UniqueIdentifier>
+    <Filter Include="Core">
+      <UniqueIdentifier>{5196f393-115c-4cbe-a4fe-44f944fe1236}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Definition">
-      <UniqueIdentifier>{b4fac678-37f0-4f2b-93e8-5bcf6fa82a1b}</UniqueIdentifier>
+    <Filter Include="Core\Memory">
+      <UniqueIdentifier>{2cd70437-02e2-477a-a774-ec43ecd73bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Definition">
+      <UniqueIdentifier>{822026ea-762d-40e7-816b-e997182e50b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Container">
+      <UniqueIdentifier>{43b3dc51-84bb-4be2-8ca5-4a58ff043561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Container\Memory">
+      <UniqueIdentifier>{b3aa33c0-0568-4a26-b9d9-cdb269f0ab3b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CometEngine\Memory\CometEngineMemory.h">
-      <Filter>Memory</Filter>
-    </ClInclude>
-    <ClInclude Include="CometEngine\Definition\CometEngineTypes.h">
-      <Filter>Definition</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CometEngine\Memory\CometEngineMemory.cpp">
-      <Filter>Memory</Filter>
-    </ClCompile>
     <ClCompile Include="MemoryTester\Main.cpp">
       <Filter>ClientWin32</Filter>
     </ClCompile>
+    <ClCompile Include="Core\Memory\CometEngineMemory.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Container\CometEngineContainer.cpp">
+      <Filter>Core\Container</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Memory\CometEngineMemory.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Definition\CometEngineTypes.h">
+      <Filter>Core\Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Container\CometEngineContainer.h">
+      <Filter>Core\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Container\Memory\IContainerMemory.h">
+      <Filter>Core\Container\Memory</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
